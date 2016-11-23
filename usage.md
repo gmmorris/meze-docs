@@ -24,7 +24,7 @@ The above should print out the following message into the console.
 > Hello Hummus, we're speaking via composition
 
 Note how the API of the *Meze.compose* method is that it takes a single component instance and returns a promise. All component trees start at a single root component, just like React, but the resolution is assumed to be asynchronous hence the main interaction with the library is via Promises.
-Suffice to say we're very pleased about Promises becoming an official Javascript primitive, elevating its usage to what we consider ubiquitous.
+Suffice to say we're very pleased about Promises becoming a built-in Javascript type, elevating its usage to what we consider ubiquitous.
 
 ## A Composition of Components
 Meze builds a component tree by mounting the root component, and then mounting every child component in the components return value. It continues with this operation all the way up (or down, depends how you look at it) until it "reaches the tree top", which is to say it runs out of components to mount.
