@@ -36,12 +36,13 @@ There is only one module you *need* in order to start using Meze, which is the c
 npm install --save meze
 npm install --save-dev babel-preset-meze
 ```
+
+In order to use *babel-preset-meze* you'll also want to define it's usage in your *.babelrc* file (we've included the es2015 preset).
 ```json
 {
   "presets": ["meze", "es2015"]
 }
 ```
-In order to use *babel-preset-meze* you'll also want to define it's usage in your *.babelrc* file (we've included the es2015 preset).
 
 Once you have both of these modules installed you can start defining components and composing them together.
 
