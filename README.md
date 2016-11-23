@@ -27,7 +27,7 @@ The key difference between React and what we're looking for is that React is des
 What we need is a pipe line of operations, resulting in some kind of result and often, some side effects too. This called for a very different implementation approach from what React could provide.
 That said, the Component Composition API, which is the basis of what separates React, Inferno and similar libraries from other UI focused libraries, is very intuitive, generic enough to suit our needs and most importantly - has received wide adoption and so would make onboarding new developers into the Meze ecosystem easier.
 
-So what we've built is a library using the familiar Component Composition API with *unidirectional data flow and separation of concerns* whose internal implemenation is designed more as a *compose & reduce* operation, then a stateful tree.
+So what we've built is a library using the familiar Component Composition API with *unidirectional data flow and separation of concerns* whose internal implementation is designed as a *compose & reduce* operation rather than a long lived tree of flowing state.
 
 ## Install
 There are only one module you need to in order to start using Meze, which is the core *meze* library. In addition you'd probably benefit from using *babel-preset-meze* as well, which will allow you to start using Meze components via JSX.
