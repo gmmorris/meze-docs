@@ -133,4 +133,5 @@ A Meze component may return any Javascript primitive, which includes the followi
 All are valid return values and it is up to the parent component to deal know how to process the returned value.
 
 ### objects and arrays
-A Meze component may return a plain Javascript object or an Array
+A Meze component may return a a variety of Objects, but the way in which Meze treats them can change depending on the type.
+plain Javascript object or an Array
