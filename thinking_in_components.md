@@ -177,7 +177,7 @@ import Meze from 'meze'
 
 const startTime = Date.now()
 const howManySecondsSinceProgramStarted = () =>
-  Math.abs((Date.now() - startTime) / 1000)
+  parseInt((Date.now() - startTime) / 1000)
 
 const DelayedComponent = ({ delay = 1 }) => {
   return new Promise(resolve => {
@@ -205,7 +205,8 @@ Meze.compose(
 ```
 
 The above code will result in the following output being printed to the console:
-> 
+> [ 1, 2, 5 ]
+This shows that each of the child components in the array resolved at a different time, but only when all those promises resolve, is their return value placed into the array in the parent component.
 
 ### complex objects
 When any other type of object is returned by a component it is simply passed through to the parent component. This allows the developer to use Components as decoupled wrappers for complex Javascript objects, without losing the power of complex Prototypical paradigms.
