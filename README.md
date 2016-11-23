@@ -1,3 +1,7 @@
-# My Awesome API
+# Meze
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+
+
+Meze, a word with its roots in antiquity, is a selection of small dishes served accompanying alcoholic drinks, whose purpose is three-fold: to complement and enhance the taste of the drink, to provide the backdrop for a social gathering and to decouple the implementation of the variety of dishes so that they may be consumed by the happy hungry developers in whichever way suits them the best.
+
+The above is as true for real life Meze as for it's Javascript counterpart.
