@@ -124,3 +124,13 @@ Meze.compose(
 
 ```
 
+### return values
+In React a Component is expected to return an Element, which makes sense for React as it is used to compose a tree of Elements.
+Meze, on the other hand, has a very different purpose which is to compose data and execute a process, hence the return values in a Meze Component can be varied.
+
+#### primitives
+A Meze component may return any Javascript primitive, which includes the following: string, number, boolean, null, undefined and symbol.
+All are valid return values and it is up to the parent component to deal know how to process the returned value.
+
+### objects and arrays
+A Meze component may return a plain Javascript object or an Array
