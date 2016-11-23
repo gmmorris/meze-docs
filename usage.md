@@ -43,13 +43,13 @@ import Meze, { compose } from 'meze'
 const RandomNumberBetweenFloorAndCeiling = ({ ceil, floor }) => {
   return {
     ceil,
-    randomNumber:
+    randomNumber: <GetRandomNumber ceil={ceil} floor={floor} />
     floor
   }
 }
 
 const GetRandomNumber = ({ ceil, floor }) => {
-  return `Hello ${props.name}, we're speaking via composition`
+  return Math.random() * (ceil - floor) + floor
 }
 
 compose(<RandomNumberBetweenFloorAndCeiling ceil={100} floor={50} />)
@@ -58,3 +58,10 @@ compose(<RandomNumberBetweenFloorAndCeiling ceil={100} floor={50} />)
   })
 
 ```
+
+The above should print out the message similar to the following into the console (similar, because we can't predict the value of Random, can we?).
+```js
+Object {floor: 50, randomNumber: 86.70486272192622, ceil: 100}
+```
+
+
