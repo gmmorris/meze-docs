@@ -14,6 +14,7 @@ Born out of a thought experiment, *Meze* provides the Component Composition API 
 * Asynchronous processes are seamlessly supported via a *Promise based API* between composed component trees
 * Fully supports *JSX* in order to make adoption as seamless as possible for developers already used to the syntax and developer experience of React
 * [*Banquet*](https://github.com/gmmorris/meze/tree/master/packages/banquet), a *Meze* based wrapper for the superb [Restify](http://restify.com/) library, is available to make it easy to get started building a *REST* service using **Meze**
+* Supports all of the paradigms we've come to love about working with React, ranging from Component Composition to Higher Order Components
 
 ## Why
 The most obvious question in regards to Meze is - why would we want to add it to our stack?
