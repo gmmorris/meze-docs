@@ -173,3 +173,5 @@ In the above snippet all child components will be composed by Meze, resulting in
 ### complex objects
 When any other type of object is returned by a component it is simply passed through to the parent component. This allows the developer to use Components as decoupled wrappers for complex Javascript objects, without losing the power of complex Prototypical paradigms.
 
+Meze will only dig into the properties of plain Javascript objects, and will trust the developer to compose any internal components they use in their prototypes themselves.
+
