@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Basic Usage](usage.md)
-* Thinking in Components
+* [Thinking in Components](thinking_in_components.md)
 
