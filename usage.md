@@ -1,4 +1,4 @@
-# Usage
+# Basic Usage
 
 If you have experience using React then you should feel comfortable jumping right into Meze.
 
