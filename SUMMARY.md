@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Defining Methods](methods.md)
-* Usage
+* [Usage](usage.md)
 
