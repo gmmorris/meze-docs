@@ -76,24 +76,37 @@ const Echo = function (props) {
   return Object.assign({}, props)
 }
 
-const Summarize = function (props) {
+const Summarize = function ({ children }) {
   return {
-    contents: mapToArray(props.children),
-    extendedContents: cloneWithProps(props.children, { hey: 'ho' })
+    contents: Children.mapToArray(children),
+    extendedContents: Children.cloneWithProps(children, { hey: 'ho' })
   }
 }
 
-const actual = await compose(
-  <Summarize>
-    <Echo name="John" />
-    <Echo name="Doe" />
-  </Summarize>
-)
-
-compose(<RandomNumberBetweenFloorAndCeiling ceil={100} floor={50} />)
+compose(
+    <Summarize>
+      <Echo name="John" />
+      <Echo name="Doe" />
+    </Summarize>
+  )
   .then(result => {
     console.log(result)
   })
 
 ```
 
+The above should print out the message similar to the following into the console.
+```js
+Object {
+      contents: [
+        { name: 'John' },
+        { name: 'Doe' }
+      ],
+      extendedContents: [
+        { name: 'John', hey: 'ho' },
+        { name: 'Doe', hey: 'ho' }
+      ]
+    }
+```
+
+What we can see here 
