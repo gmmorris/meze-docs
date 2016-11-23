@@ -10,5 +10,6 @@ Born out of a thought experiment, *Meze* provides the Component Composition API 
 
 ## Key Features
 * Stateless Components maintain the standard React API, with slight changes to better reflect their purpose as implementations of data & process ,rather than stateful UI
+* Meze.compose mounts a component tree which reduces down to a single return value
 * 
 
