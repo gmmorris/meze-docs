@@ -57,21 +57,46 @@ Meze.compose(<HasProps name="Hummus" />)
 
 ### props
 The props object, is a plain Javascript object, which will always get passed into you Component's constructor.
-
+Which ever properties are defined on the component when it's composed, will be passed as properties of this object.
+Just like React, the only property added to the *props* by Meze itself is the optional *children* prop.
+The children prop, described in detail in it's own chapter, is a special Data Structure and acts as a wrapper for all child components with which the current component has been composed.
 
 ```js
 import Meze from 'meze'
 
-const GetPersonalisedMessage = (props) => {
-  return `Hello ${props.name}, we're speaking via composition`
+const MyComponent = (props) => {
+  /*
+    props is now an object with three props:
+    {
+      left: 0,
+      right: 1,
+      children : ChildrenDtataStructure(
+        [
+          <FirstChild />,
+          <SecondChild />
+        ]
+      )
+    } 
+  */
 }
 
-Meze
-  .compose(<GetPersonalisedMessage name="Hummus" />)
-  .then(result => {
-    console.log(result)
-  })
+Meze.compose(
+  <MyComponent left={0} right={1}>
+    <FirstChild />
+    <SecondChild />
+  </MyComponent>
+ )
 
 ```
 
+### context
+The true power of the Component Composition implemented by Meze comes from the unidirectional flow of data between your components and the predictability of a component's behavior based on the value of its props. 
 
+Sometime, though, you may want to simplify your API by defining a Context for your current composition tree.
+This can be useful when composing a set of components who all refer to a single source of (ideally) read only data, and you wish to avoid having to manually pass this source of data down through all the props.
+
+In general we would recommend avoiding context where possible, but we chose to provide this API as we find it becomes an invaluable feature when used correctly.
+
+The *context* as passed into every constructor as its second argument and is a plain Javascript object.
+By default *context* has one single property: the *compose* function which can be used by Component authors to compose internal component trees.
+This is explained further in the Advanced Composition chapter.
