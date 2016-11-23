@@ -2,12 +2,13 @@
 
 Components let you split your application into independent, reusable pieces, and think about each piece in isolation.
 
-In essence, components are nothing more than functions. They accept a single argument, named **props**, which is a plain Javascript Object, and return either an object or primitive which are passed back to whoever composed them.
+In essence, components are simple functions, referred to as Constructor functions. They accept a two arguments, **props** and **context**, which are a plain Javascript Objects, and return either an object or primitive which are passed back to whoever composed them.
 
+## Basic API
+Meze Components is designed to work as closely to React Components as possible, so the API should be familiar to anyone who has worked with React,  but there are several nuances which are different.
 
-
-## A Simple Component
-Meze only supports Stateless Component, as we want to encourage pure stateless operations. Just as with React, the usage of JSX is optional, but we find its usage makes it easier for React developers to reason about Meze code.
+### props
+The props object, is a plain Javascript object, which will always get passed into you Component's constructor function.
 
 ```js
 import Meze from 'meze'
