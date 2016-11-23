@@ -167,3 +167,9 @@ Meze.compose(
 In the above snippet all child components will be composed by Meze, resulting in the following output:
 > { child: 1, arrayOfChildren: [ 2, { child: 3 } ] }
 
+
+### promises
+
+### complex objects
+When any other type of object is returned by a component it is simply passed through to the parent component. This allows the developer to use Components as decoupled wrappers for complex Javascript objects, without losing the power of complex Prototypical paradigms.
+
