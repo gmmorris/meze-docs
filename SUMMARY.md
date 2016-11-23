@@ -6,5 +6,5 @@
 * [Manipulating Children](manipulating_children.md)
 * [Advanced Composition](advanced_composition.md)
 * [TODO](todo.md)
-* Composing
+* [Composing](composing.md)
 
