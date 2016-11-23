@@ -98,5 +98,32 @@ This can be useful when composing a set of components who all refer to a single 
 In general we would recommend avoiding context where possible, but we chose to provide this API as we find it becomes an invaluable feature when used correctly.
 
 The *context* as passed into every constructor as its second argument and is a plain Javascript object.
+
 By default *context* has one single property: the *compose* function which can be used by Component authors to compose internal component trees.
 This is explained further in the Advanced Composition chapter.
+
+The *context* is set by the *compose* function.
+
+```js
+import Meze from 'meze'
+
+const ChildComponent = (props, context) => {
+  return context.message
+}
+
+const ComponentWithContext = (props, context) => {
+  return <ChildComponent />
+}
+
+Meze.compose(
+  <ComponentWithContext />,
+  {
+    message: 'This is a value on the context, it will get logged'
+  }
+ )
+ .then(result => {
+   console.log(result)
+ })
+
+```
+
