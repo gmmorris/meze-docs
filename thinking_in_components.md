@@ -58,6 +58,7 @@ Meze.compose(<HasProps name="Hummus" />)
 ### props
 The props object, is a plain Javascript object, which will always get passed into you Component's constructor.
 
+
 ```js
 import Meze from 'meze'
 
