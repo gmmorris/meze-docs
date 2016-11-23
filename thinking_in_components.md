@@ -133,5 +133,37 @@ A Meze component may return any Javascript primitive, which includes the followi
 All are valid return values and it is up to the parent component to deal know how to process the returned value.
 
 ### objects and arrays
-A Meze component may return a a variety of Objects, but the way in which Meze treats them can change depending on the type.
-plain Javascript object or an Array
+A Meze component may return a variety of Objects, but the way in which Meze treats them can change depending on the type.
+When a Component provides a plain Javascript object or an Array as its return value, Meze will pass it to the parent component, just like a promitive, but it will also scan the object/array for all internal components and mount them as well.
+
+```js
+import Meze from 'meze'
+
+let counter = 0
+const ChildComponent = () => {
+  return ++counter
+}
+
+const ComponentWithChildren = () => {
+  return {
+    child: <ChildComponent />,
+    arrayOfChildren: [
+      <ChildComponent />,
+      {
+        child: <ChildComponent />
+      }
+    ]
+  }
+}
+
+Meze.compose(
+  <ComponentWithChildren />
+ )
+ .then(result => {
+   console.log(result)
+ })
+
+```
+In the above snippet all child components will be composed by Meze, resulting in the following output:
+> { child: 1, arrayOfChildren: [ 2, { child: 3 } ] }
+
