@@ -1,7 +1,7 @@
 {
     "plugins": [
         "theme-api",
-        "-theme-rrf"
+        "theme-rrf"
     ],
     "pluginsConfig": {
         "theme-api": {
