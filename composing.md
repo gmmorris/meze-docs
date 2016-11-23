@@ -31,5 +31,5 @@ const SomeResolvingComponent = ({ returnValue }) => {
 
 Meze.compose(<SomeResolvingComponent returnValue={true} />)
   .then(result => console.log(result))
-  .catch(result => console.log(result))
+  .catch(error => console.log(error))
 ```
