@@ -15,6 +15,10 @@ Born out of a thought experiment, *Meze* provides the Component Composition API 
 * Fully supports *JSX* in order to make adoption as seamless as possible for developers already used to the syntax and developer experience of React
 * [*Banquet*](https://github.com/gmmorris/meze/tree/master/packages/banquet), a *Meze* based wrapper for the superb [Restify](http://restify.com/) library, is available to make it easy to get started building a *REST* service using **Meze**
 
+## Install
+There are only two modules you need to in order to start using Meze.
+*meze* and *babel-preset-meze* will allow you to start using Meze components with JSX right away.
+
 
 
 
