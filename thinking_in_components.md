@@ -99,9 +99,6 @@ In general we would recommend avoiding context where possible, but we chose to p
 
 The *context* as passed into every constructor as its second argument and is a plain Javascript object.
 
-By default *context* has one single property: the *compose* function which can be used by Component authors to compose internal component trees.
-This is explained further in the Advanced Composition chapter.
-
 The *context* is set by the *compose* function.
 
 ```js
