@@ -30,12 +30,14 @@ That said, the Component Composition API, which is the basis of what separates R
 So what we've built is a library using the familiar Component Composition API with *unidirectional data flow and separation of concerns* whose internal implementation is designed as a *compose & reduce* operation rather than a long lived tree of flowing state.
 
 ## Install
-There are only one module you need to in order to start using Meze, which is the core *meze* library. In addition you'd probably benefit from using *babel-preset-meze* as well, which will allow you to start using Meze components via JSX.
+There is only one module you *need* in order to start using Meze, which is the core *meze* module. In addition you'd probably benefit from using *babel-preset-meze* as well, which will allow you to start using Meze components via JSX.
 
 ```sh
 npm install --save meze
 npm install --save-dev babel-preset-meze
 ```
+
+In order to use *babel-preset-meze* you'll also want to define it's usage in your *.babelrc* file (we've included the es2015 preset).
 
 Once you have both of these modules installed you can start defining components and composing them together.
 
