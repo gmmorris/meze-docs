@@ -52,7 +52,7 @@ const GetRandomNumber = ({ ceil, floor }) => {
   return Math.random() * (ceil - floor) + floor
 }
 
-compose(<RandomNumberBetweenFloorAndCeiling ceil={100} floor={50} />)
+Meze.compose(<RandomNumberBetweenFloorAndCeiling ceil={100} floor={50} />)
   .then(result => {
     console.log(result)
   })
@@ -64,4 +64,36 @@ The above should print out the message similar to the following into the console
 Object {floor: 50, randomNumber: 86.70486272192622, ceil: 100}
 ```
 
+## Basic usage of Children
+Every component can be composed with an arbitrary number of children.
+If any children are provided then a *children* property will be passed into the Meze component when it's mounted.
+
+The following is a simple example of how this may be used.
+```js
+import Meze, Children, { compose } from 'meze'
+
+const Echo = function (props) {
+  return Object.assign({}, props)
+}
+
+const Summarize = function (props) {
+  return {
+    contents: mapToArray(props.children),
+    extendedContents: cloneWithProps(props.children, { hey: 'ho' })
+  }
+}
+
+const actual = await compose(
+  <Summarize>
+    <Echo name="John" />
+    <Echo name="Doe" />
+  </Summarize>
+)
+
+compose(<RandomNumberBetweenFloorAndCeiling ceil={100} floor={50} />)
+  .then(result => {
+    console.log(result)
+  })
+
+```
 
