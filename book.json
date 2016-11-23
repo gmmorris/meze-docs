@@ -5,6 +5,7 @@
     ],
     "pluginsConfig": {
         "theme-api": {
+            "theme": "dark",
             "languages": [
                 {
                     "lang": "js",
