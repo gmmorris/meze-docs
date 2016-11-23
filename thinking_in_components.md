@@ -169,6 +169,9 @@ In the above snippet all child components will be composed by Meze, resulting in
 
 
 ### promises
+When a promise is returned by a composed component, its return value will be passed back to its parent component rather than the promise itself.
+This means that you can use promises to tell Meze that your component *will* have a return value at some point and that it should wait for this promise to resolve before continuing back up the chain.
+
 
 ### complex objects
 When any other type of object is returned by a component it is simply passed through to the parent component. This allows the developer to use Components as decoupled wrappers for complex Javascript objects, without losing the power of complex Prototypical paradigms.
