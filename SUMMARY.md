@@ -3,5 +3,5 @@
 * [Introduction](README.md)
 * [Basic Usage](usage.md)
 * [Thinking in Components](thinking_in_components.md)
-* Advanced Composition
+* [Advanced Composition](advanced_composition.md)
 
