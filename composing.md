@@ -24,6 +24,8 @@ Meze.compose(SomeComponent)
 ```
 
 The return value of the Meze.compose function is a promise, which may *resolve* to the root component's return value or *reject* if an uncaught error is thrown within the composition tree.
+
+The following composition will result in *rejection* and will console.log the error.
 ```js
 const SomeResolvingComponent = ({ isValid }) => {
   if(isValid === true) {
