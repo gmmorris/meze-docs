@@ -175,3 +175,30 @@ When any other type of object is returned by a component it is simply passed thr
 
 Meze will only dig into the properties of plain Javascript objects, and will trust the developer to compose any internal components they use in their prototypes themselves.
 
+```js
+import Meze from 'meze'
+
+function Complex(name){
+  this.name = name
+}
+Complex.prototype = {
+  getName: function(){
+    return this.name
+  }
+}
+
+const ComponentWithChildren = ({ name }) => {
+  return {
+    complexChild: new Complex(name)
+  }
+}
+
+Meze.compose(
+  <ComponentWithChildren name="Katniss Everdeen" />
+ )
+ .then(result => {
+   /// print 'Katniss Everdeen'
+   console.log(result.complexChild.getName())
+ })
+
+```
