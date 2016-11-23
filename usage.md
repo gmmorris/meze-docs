@@ -109,4 +109,10 @@ Object {
     }
 ```
 
-What we can see here 
+Above is an example of two utilities we provide for working with the Children data structure.
+*Children.mapToArray* takes the children prop as an argument and returns an array containing the children instances, while *Children.cloneWithProps* clones each component instance and extends their props with whichever object is provided in the second argument, in our case the object:
+```js
+{ hey: 'ho' }
+```
+
+Please look at the extensive documentation on the Children data structure for a full understanding of the various Children utility functions and their respected usage.
