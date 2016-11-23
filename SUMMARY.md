@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Usage](usage.md)
+* [Basic Usage](usage.md)
 
