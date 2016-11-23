@@ -172,6 +172,40 @@ In the above snippet all child components will be composed by Meze, resulting in
 When a promise is returned by a composed component, its return value will be passed back to its parent component rather than the promise itself.
 This means that you can use promises to tell Meze that your component *will* have a return value at some point and that it should wait for this promise to resolve before continuing back up the chain.
 
+```js
+import Meze from 'meze'
+
+const startTime = Date.now()
+const howManySecondsSinceProgramStarted = () =>
+  Math.abs((Date.now() - startTime) / 1000)
+
+const DelayedComponent = ({ delay = 1 }) => {
+  return new Promise(resolve => {
+    setTimeout(() =>
+      resolve(howManySecondsSinceProgramStarted()),
+      delay * 1000
+    )
+  })
+}
+
+const ArrayOfDelayedComponents = () => {
+  return [
+    <DelayedComponent />,
+    <DelayedComponent delay={2} />,
+    <DelayedComponent delay={5} />
+  ]
+}
+
+Meze.compose(
+  <ArrayOfDelayedComponents />
+ )
+ .then(result => {
+   console.log(result)
+ })
+```
+
+The above code will result in the following output being printed to the console:
+> 
 
 ### complex objects
 When any other type of object is returned by a component it is simply passed through to the parent component. This allows the developer to use Components as decoupled wrappers for complex Javascript objects, without losing the power of complex Prototypical paradigms.
