@@ -27,3 +27,11 @@ const SummarizeV2 = function (props) {
 
 Each of the following sit on the **Meze.Children** object.
 #### mapToArray(children : Children | [], mapper : (item, index) => any) : []
+
+### map(children : Children | [], mapper : (item, index) => any) : Children
+
+###
+###
+###
+###
+###
