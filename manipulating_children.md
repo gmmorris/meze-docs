@@ -28,16 +28,16 @@ const SummarizeV2 = function (props) {
 ## Children API reference
 
 Each of the following sit on the **Meze.Children** object.
-#### mapToArray(children : Children | [], mapper : (item, index) => any) : []
+### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 
-### map(children : Children | [], mapper : (item, index) => any) : Children
+### map(children : Children | [], mapper : (item, index) => any) => Children
 
-### forEach(children : Children | [], mapper : (item, index) => any)
+### forEach(children : Children | [], mapper(item, index) => any)
 
-### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) : any
+### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
 
-### cloneWithProps(children : Children | [], props : Object | () => Object) : Children
+### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
 
-### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) : any
+### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) => any
   
-### 
+### only(children : Children | []) => any
