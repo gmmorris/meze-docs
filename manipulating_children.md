@@ -34,10 +34,12 @@ Each of the following sit on the **Meze.Children** object.
 
 ### forEach(children : Children | [], mapper(item, index) => any)
 
-### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
-
 ### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
+
+### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
 
 ### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) => any
   
 ### only(children : Children | []) => any
+
+### onlyComposed(children : Children, context) => any
