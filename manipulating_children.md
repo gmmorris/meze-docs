@@ -177,6 +177,36 @@ If omitted, all functions will inherit the context of the current component.
 #### reduceComposed(children : Children | [], reducer : (accumulator, item, index) => any, initialValue, context) => any
 The reduceComposed() function applies a function against an accumulator and the return value of each composed element in *children* to reduce it to a single value.
 
+```js
+const PosponedComp = props => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(props.val)
+    }, parseInt(Math.random() * 100))
+  })
+}
+
+const Summarize = function (props) {
+  const { children } = props
+  return {
+    sum: reduceComposed(children, (sum, val) => {
+      return sum + val
+    }, 0)
+  }
+}
+
+compose(
+  <Summarize>
+    <PosponedComp val={1} />
+    <PosponedComp val={2} />
+    <PosponedComp val={3} />
+  </Summarize>
+).then(console.log)
+```
+The above composition will log the following object to console:
+```json
+{ sum: 6 }
+```
 #### mapComposed(children : Children | [], mapper : (item, index) => [], context) => []
 The mapComposed() function returns an creates a new array with the results of calling a provided function on the return value of the composition of each child.
 A promise is returned by *mapComposed* which will resolve with the new array after all children are composed and the mapper has been applied to their result.
