@@ -73,6 +73,7 @@ If the *props* argument is a function, that function will be called and its retu
 
 #### reduce(children : Children | [], reducer : (accumulator, item, index) => any, initialValue) => any
 The reduce() method applies a function against an accumulator and each element in *children* to reduce it to a single value.
+Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
   
 #### only(children : Children | []) => any
 
