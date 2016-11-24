@@ -67,7 +67,10 @@ const Echo = (props) => JSON.stringify(props)
 
 const Summarize = function ({ children }) {
   return {
-    contents: map(children, (child, index) => child.clone({ order: index }))
+    contents: map(
+       children,
+       (child, index) => child.clone({ order: index })
+     )
   }
 }
 
