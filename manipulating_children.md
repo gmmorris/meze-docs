@@ -64,7 +64,7 @@ If no mapper function is provided then *map* uses the *identity* function, which
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
 
 #### forEach(children : Children | [], mapper(item, index) => any)
-The forEach() method executes a provided function once per element in the Children data structure.
+The forEach() function executes a provided function once per element in the Children data structure.
 
 #### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
 The cloneWithProps() function creates a new Children data structure with the results of cloning each component instance it contains.
@@ -72,15 +72,18 @@ Each clone will have its own props extended with the *props* argument.
 If the *props* argument is a function, that function will be called and its return value will be used as the props argument.
 
 #### reduce(children : Children | [], reducer : (accumulator, item, index) => any, initialValue) => any
-The reduce() method applies a function against an accumulator and each element in *children* to reduce it to a single value.
+The reduce() function applies a function against an accumulator and each element in *children* to reduce it to a single value.
 Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
   
 #### only(children : Children | []) => any
 Returns the only child in children. If there are no children or alternatively more than a single child, the function will throw.
 
 ### Post Composition
+All post composition functions are applied *after* composing the child components and return a promise which resolves after applying the operation.
 
 #### reduceComposed(children : Children | [], reducer : (accumulator, item, index) => any, initialValue, context) => any
+The reduceComposed() function applies a function against an accumulator and the return value of each composed element in *children* to reduce it to a single value.
+
 #### mapComposed(children : Children | [], mapper : (item, index) => [], context) => any
 
 #### onlyComposed(children : Children | [], context) => any
