@@ -33,6 +33,7 @@ Pre composition are operations which are applied to Component Instanced *before*
 ### Pre Composition
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
+The map() method creates a new array with the results of calling a provided function on every element in this array.
 
 #### map(children : Children | [], mapper : (item, index) => any) => Children
 
