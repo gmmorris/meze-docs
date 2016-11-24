@@ -90,3 +90,4 @@ A promise is returned by *mapComposed* which will resolve with the new array aft
 If no mapper function is provided then *mapComposed* uses the *identity* function, basically providing an easy way to compose all children into an array.
 
 #### onlyComposed(children : Children | [], context) => any
+Composes all the elements in the children data structure and returns the only *none-undefined* return value of the various children. If there are no return values or alternatively more than a single return value, the function will throw.
