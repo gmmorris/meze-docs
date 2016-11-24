@@ -214,3 +214,30 @@ If no mapper function is provided then *mapComposed* uses the *identity* functio
 
 #### onlyComposed(children : Children | [], context) => any
 Composes all the elements in the children data structure and returns the only *none-undefined* return value of the various children. If there are no return values or alternatively more than a single return value, the function will throw.
+
+```js
+const DumbComponent = function ({ isValid }) {
+  if(isValid) {
+    return { areYouADumbComponent: true }
+  }
+}
+const EmptyDumb = () => {}
+
+const TheOnlyChild = function (props) {
+  return {
+    only: onlyComposed(props.children)
+  }
+}
+
+compose(
+  <Summarize>
+    <AgeFetcher entity="father" />
+    <AgeFetcher entity="daughter" />
+    <AgeFetcher entity="dog" />
+  </Summarize>
+).then(console.log)
+```
+The above composition will log the following object to console:
+```json
+{ sum: 75 }
+```
