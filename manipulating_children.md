@@ -7,6 +7,23 @@ The value of the children prop is a Meze specific data structure designed to mak
 
 A common mistake made by developers is to assume that the *children* property will contain only Component Instances but it will in fact contain any child values that the component is composed with.
 ```js
+const Echo = ({ children }) => {
+  /*
+  The `children` prop will contain three
+  values:
+    [0] The string `You know nothing`
+    [1] A Component Instance of the EchoName with the props { name: "John"}
+    [2] A Component Instance of the EchoName with the props { name: "Snow"}
+  */
+}
+
+compose(
+  <Echo>
+    You know nothing
+    <EchoName name="John" />
+    <EchoName name="Snow" />
+  </Echo>
+).then(console.log)
 ```
 
 ## Manipulating Children
