@@ -79,7 +79,7 @@ compose(
 ).then(console.log)
 ```
 
-The above composition will output the following:
+The above composition will log the object to console:
 ```json
 { 
   contents: [
