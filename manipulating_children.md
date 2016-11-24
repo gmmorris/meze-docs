@@ -164,7 +164,7 @@ The above composition will log the following object to console:
 #### reduce(children : Children | [], reducer : (accumulator, item, index) => any, initialValue) => any
 The reduce() function applies a function against an accumulator and each element in *children* to reduce it to a single value.
 Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
-  
+
 #### only(children : Children | []) => any
 Returns the only child in children. If there are no children or alternatively more than a single child, the function will throw.
 
