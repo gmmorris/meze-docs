@@ -179,7 +179,10 @@ The reduceComposed() function applies a function against an accumulator and the 
 
 ```js
 const AgeFetcher = ({ entity }) => {
-  /* The Age api returns the age of the entity */
+  /* 
+    The Age api returns the age of the entity.
+    Lets assume the ages are: 50 (father), 22 (daughter), 3 (dog)
+   */
   return fetch(`ageApi.com/getAgeOf/${entity}`)
     .then(result => result.age)
 }
@@ -202,7 +205,7 @@ compose(
 ```
 The above composition will log the following object to console:
 ```json
-{ sum: 6 }
+{ sum: 75 }
 ```
 #### mapComposed(children : Children | [], mapper : (item, index) => [], context) => []
 The mapComposed() function returns an creates a new array with the results of calling a provided function on the return value of the composition of each child.
