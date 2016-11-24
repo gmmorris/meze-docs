@@ -8,7 +8,7 @@ All of the following manipulation functions are completely stand alone and recei
 Both of the following components will behave exactly the same.
 ```js
 import Meze from 'meze
-const {mapToArray } = Meze.Children
+const { mapToArray } = Meze.Children
 
 const Summarize = function (props) {
   return {
@@ -23,7 +23,7 @@ const SummarizeV2 = function (props) {
 }
 ```
 
-## Contents of Child  ren
+## Contents of Children
 
 ## Children API reference
 
