@@ -178,16 +178,12 @@ If omitted, all functions will inherit the context of the current component.
 The reduceComposed() function applies a function against an accumulator and the return value of each composed element in *children* to reduce it to a single value.
 
 ```js
-const PosponedComp = props => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(props.val)
-    }, parseInt(Math.random() * 100))
-  })
+const AgeFetcher = ({ entity }) => {
+  return fetch(`ageApi.com/getAgeOf/${entity}`)
+    .then(result => result.age)
 }
 
-const Summarize = function (props) {
-  const { children } = props
+const Summarize = function ({ children }) {
   return {
     sum: reduceComposed(children, (sum, val) => {
       return sum + val
@@ -197,9 +193,9 @@ const Summarize = function (props) {
 
 compose(
   <Summarize>
-    <PosponedComp val={1} />
-    <PosponedComp val={2} />
-    <PosponedComp val={3} />
+    <AgeFetcher entity="father" />
+    <AgeFetcher entity="daughter" />
+    <AgeFetcher entity="dog" />
   </Summarize>
 ).then(console.log)
 ```
