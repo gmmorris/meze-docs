@@ -236,6 +236,7 @@ compose(
   </TheOnlyChild>
 ).then(console.log)
 ```
+
 The above composition will log the following object to console:
 ```json
 { only: "Some Valid Component" }
