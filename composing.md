@@ -34,7 +34,7 @@ const SomeResolvingComponent = ({ isValid }) => {
   throw Error('Invalid component')
 }
 
-Meze.compose(<SomeResolvingComponent isValid={false} />)
-  .then(result => console.log(result))
+Meze
+  .compose(<SomeResolvingComponent isValid={false} />)
   .catch(error => console.log(error))
 ```
