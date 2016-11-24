@@ -9,7 +9,7 @@ Below is the table of the various events you can hook into.
 | `componentWillMount` | a component is about to mount ||
 | `componentDidMount` | a component has mounted successfully, has been composed and has its resulting composition is at hand | `composition` |
 | `componentWillUnmount` | a component is about to be unmounted and its resulting composition returned to the parent component | `composition` |
-| `componentFailedMount` | a stateless component has been triggered to updated            | `lastProps, nextProps` |
+| `componentFailedMount` | a component has failed to mount and has resulted in an exception | `exception` |
 
 ### Using hooks
 
