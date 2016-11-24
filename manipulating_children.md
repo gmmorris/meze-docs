@@ -60,6 +60,37 @@ Note that if a child is a component then it will still, at this point, be an unm
 
 If no mapper function is provided then *map* uses the *identity* function, which would essentially mean a no-op, but hey, maybe some developers roll that way, no criticism here.
 
+A common use for *map* is to create Component Instanced on the fly and pass them onwards to other Children manipulation functions.
+```js
+const { map } = Meze.Children
+
+const Echo = (props) => JSON.stringify(props)
+function nameToComponent (name, index) {
+  return <Echo name={name} order={index} />
+}
+
+const Summarize = function ({ children }) { 
+  return children.toArray()
+}
+
+Meze.compose(
+    <Summarize>
+    {
+       map([ "John", "Snow" ], nameToComponent)
+    }
+    </Summarize>
+).then(console.log)
+```
+
+The above composition will log the following object to console:
+```json
+{ 
+  contents: [
+    '{"firstname":"John","order":0}',
+    '{"lastname":"Snow","order":1}'
+   ]
+}
+```
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
@@ -104,6 +135,24 @@ The cloneWithProps() function creates a new Children data structure with the res
 Each clone will have its own props extended with the *props* argument.
 If the *props* argument is a function, that function will be called and its return value will be used as the props argument.
 
+```js
+const Echo = function (props) {
+  return Object.assign({}, props)
+}
+
+const Summarize = function (props) {
+  return cloneWithProps(props.children, (childProps) => (
+    { 'NAME': childProps.name.toUpperCase() }
+  ))
+}
+
+compose(
+  <Summarize>
+    <Echo name="John" />
+    {{ name: 'Doe' }}
+  </Summarize>  
+).then(console.log)
+```
 #### reduce(children : Children | [], reducer : (accumulator, item, index) => any, initialValue) => any
 The reduce() function applies a function against an accumulator and each element in *children* to reduce it to a single value.
 Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
