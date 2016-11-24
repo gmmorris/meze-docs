@@ -76,6 +76,7 @@ The reduce() method applies a function against an accumulator and each element i
 Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
   
 #### only(children : Children | []) => any
+Returns the only child in children. If there are no children or alternatively more than a single child, the function will throw.
 
 ### Post Composition
 
