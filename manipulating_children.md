@@ -215,6 +215,7 @@ If no mapper function is provided then *mapComposed* uses the *identity* functio
 #### onlyComposed(children : Children | [], context) => any
 Composes all the elements in the children data structure and returns the only *none-undefined* return value of the various children. If there are no return values or alternatively more than a single return value, the function will throw.
 
+This is very useful when you want to allow the developer using your components the freedom to compose your component with whatever they want, but still enforce an API where you only actually accept one single return value from your composed children.
 ```js
 const DumbComponent = function ({ isValid }) {
   if(isValid) {
