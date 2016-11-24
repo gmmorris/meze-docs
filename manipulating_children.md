@@ -92,6 +92,7 @@ The above composition will log the following object to console:
 }
 ```
 
+
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
 
@@ -112,6 +113,9 @@ Returns the only child in children. If there are no children or alternatively mo
 
 ### Post Composition
 All post composition functions are applied *after* composing the child components and return a promise which resolves after applying the operation.
+
+All Post Composition function have an optional argument, *context*, which is the context with which the children will be composed.
+If omitted, all functions will inherit the context of the current component. 
 
 #### reduceComposed(children : Children | [], reducer : (accumulator, item, index) => any, initialValue, context) => any
 The reduceComposed() function applies a function against an accumulator and the return value of each composed element in *children* to reduce it to a single value.
