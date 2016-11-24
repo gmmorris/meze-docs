@@ -58,7 +58,7 @@ Pre composition are operations which are applied to Component Instanced *before*
 The map() function creates a new Children data structure with the results of calling a provided function on every element in this children data structure.
 Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
 
-If no mapper function is provided then *map* uses the *identity* function, which is essentially a no-op, but hey, maybe some developers roll that way, no criticism here.
+If no mapper function is provided then *map* uses the *identity* function, which would essentially mean a no-op, but hey, maybe some developers roll that way, no criticism here.
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 The mapToArray() function creates a new array with the results of calling a provided function on every element in this children data structure.
