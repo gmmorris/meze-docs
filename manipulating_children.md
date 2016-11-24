@@ -179,6 +179,7 @@ The reduceComposed() function applies a function against an accumulator and the 
 
 ```js
 const AgeFetcher = ({ entity }) => {
+  /* The Age api returns the age of the entity */
   return fetch(`ageApi.com/getAgeOf/${entity}`)
     .then(result => result.age)
 }
