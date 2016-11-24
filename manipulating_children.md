@@ -84,6 +84,9 @@ All post composition functions are applied *after* composing the child component
 #### reduceComposed(children : Children | [], reducer : (accumulator, item, index) => any, initialValue, context) => any
 The reduceComposed() function applies a function against an accumulator and the return value of each composed element in *children* to reduce it to a single value.
 
-#### mapComposed(children : Children | [], mapper : (item, index) => [], context) => any
+#### mapComposed(children : Children | [], mapper : (item, index) => [], context) => []
+The mapComposed() function returns an creates a new array with the results of calling a provided function on the return value of the composition of each child.
+A promise is returned by *mapComposed* which will resolve with the new array after all children are composed and the mapper has been applied to their result.
+If no mapper function is provided then *mapComposed* uses the *identity* function, basically providing an easy way to compose all children into an array.
 
 #### onlyComposed(children : Children | [], context) => any
