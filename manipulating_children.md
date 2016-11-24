@@ -60,6 +60,10 @@ Note that if a child is a component then it will still, at this point, be an unm
 
 If no mapper function is provided then *map* uses the *identity* function, which would essentially mean a no-op, but hey, maybe some developers roll that way, no criticism here.
 
+
+#### mapToArray(children : Children | [], mapper : (item, index) => any) => []
+The mapToArray() function operates precisely like map() except that the return value will be an Array.
+
 ```js
 const { map } = Meze.Children
 
@@ -67,7 +71,7 @@ const Echo = (props) => JSON.stringify(props)
 
 const Summarize = function ({ children }) {
   return {
-    contents: map(
+    contents: mapToArray(
        children,
        (child, index) => child.clone({ order: index })
      )
@@ -91,10 +95,6 @@ The above composition will log the following object to console:
    ]
 }
 ```
-
-
-#### mapToArray(children : Children | [], mapper : (item, index) => any) => []
-The mapToArray() function operates precisely like map() except that the return value will be an Array.
 
 #### forEach(children : Children | [], mapper(item, index) => any)
 The forEach() function executes a provided function once per element in the Children data structure.
