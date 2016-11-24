@@ -218,7 +218,7 @@ Composes all the elements in the children data structure and returns the only *n
 ```js
 const DumbComponent = function ({ isValid }) {
   if(isValid) {
-    return { areYouADumbComponent: true }
+    return `Some Valid Component`
   }
 }
 const TheOnlyChild = function (props) {
@@ -228,14 +228,14 @@ const TheOnlyChild = function (props) {
 }
 
 compose(
-  <Summarize>
-    <AgeFetcher entity="father" />
-    <AgeFetcher entity="daughter" />
-    <AgeFetcher entity="dog" />
-  </Summarize>
+  <TheOnlyChild>
+    <DumbComponent isValid={true} />
+    <DumbComponent isValid={false} />
+    <DumbComponent isValid={false} />
+  </TheOnlyChild>
 ).then(console.log)
 ```
 The above composition will log the following object to console:
 ```json
-{ sum: 75 }
+{ only: "Some Valid Component" }
 ```
