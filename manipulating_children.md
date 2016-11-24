@@ -1,5 +1,5 @@
 # Children
-## What is Children?
+## Contents of Children
 Whenever a component constructor executed, Meze will check whether the current instance has been composed with any child components and if so add a *children* prop to the *props* argument.
 Just like React, children is the only property added to the *props* by Meze itself and if no child components or values are composed with the component, it will be omitted entirely.
 
@@ -47,8 +47,6 @@ const SummarizeV2 = function (props) {
 }
 ```
 
-## Contents of Children
-
 ## Children API reference
 
 Each of the following functions resides on the **Meze.Children** object and they can be split into two groups: Pre and Post composition.
@@ -57,7 +55,7 @@ Pre composition are operations which are applied to Component Instanced *before*
 ### Pre Composition
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
-The map() method creates a new array with the results of calling a provided function on every element in this array.
+The mapToArray() function creates a new array with the results of calling a provided function on every element in this array.
 
 #### map(children : Children | [], mapper : (item, index) => any) => Children
 
