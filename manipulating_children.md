@@ -67,6 +67,8 @@ The mapToArray() function operates precisely like map() except that the return v
 The forEach() method executes a provided function once per element in the Children data structure.
 
 #### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
+The cloneWithProps() function creates a new Children data structure with the results of cloning each component instance it contains.
+Each clone will have its own props extended with the *props* argument.
 
 #### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
 
