@@ -76,7 +76,7 @@ compose(
     <Echo name="John" />
     <Echo name="Snow" />
   </Summarize>  
-)
+).then(console.log)
 ```
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
