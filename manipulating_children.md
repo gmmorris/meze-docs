@@ -27,7 +27,7 @@ compose(
 ```
 
 ## Manipulating Children
-All of the following manipulation functions are completely stand alone and receive your *children* prop as a first argument, so you can access them via the *Meze.Children* object, or use a direct reference to them.
+All of the following manipulation functions are completely stand alone and receive either your *children* prop or any array as a first argument, so you can access them via the *Meze.Children* object, or use a direct reference to them.
 
 Both of the following components will behave exactly the same.
 ```js
@@ -59,6 +59,9 @@ The map() function creates a new Children data structure with the results of cal
 Note that if a child is a component then it will still, at this point, be an unmounted Component Instance.
 
 If no mapper function is provided then *map* uses the *identity* function, which would essentially mean a no-op, but hey, maybe some developers roll that way, no criticism here.
+
+```js
+```
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
