@@ -27,7 +27,7 @@ compose(
 ```
 
 ## Manipulating Children
-All of the following manipulation functions are completely stand alone and receive either your *children* prop or any array as a first argument, so you can access them via the *Meze.Children* object, or use a direct reference to them.
+All of the following manipulation functions are completely stand alone and receive either your *children* prop (or alternatively any array) as a first argument, so you can access them via the *Meze.Children* object, or use a direct reference to them.
 
 Both of the following components will behave exactly the same.
 ```js
