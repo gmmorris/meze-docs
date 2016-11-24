@@ -61,6 +61,22 @@ Note that if a child is a component then it will still, at this point, be an unm
 If no mapper function is provided then *map* uses the *identity* function, which would essentially mean a no-op, but hey, maybe some developers roll that way, no criticism here.
 
 ```js
+const { map } = Meze.Children
+
+const Echo = (props) => JSON.stringify(props)
+
+const Summarize = function ({ children }) {
+  return {
+    contents: map(children)
+  }
+}
+
+compose(
+  <Summarize>
+    <Echo name="John" />
+    <Echo name="Snow" />
+  </Summarize>  
+)
 ```
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
