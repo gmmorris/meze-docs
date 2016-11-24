@@ -23,23 +23,30 @@ const SummarizeV2 = function (props) {
 }
 ```
 
-## Contents of Children
+## Contents of Child  ren
 
 ## Children API reference
 
-Each of the following sit on the **Meze.Children** object.
-### mapToArray(children : Children | [], mapper : (item, index) => any) => []
+Each of the following functions resides on the **Meze.Children** object and they can be split into two groups: Pre and Post composition.
+Pre composition are operations which are applied to Component Instanced *before* they are mounted, and Post composition are operations which are applied to the return values of the child components.
 
-### map(children : Children | [], mapper : (item, index) => any) => Children
+### Pre Composition
 
-### forEach(children : Children | [], mapper(item, index) => any)
+#### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 
-### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
+#### map(children : Children | [], mapper : (item, index) => any) => Children
 
-### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
+#### forEach(children : Children | [], mapper(item, index) => any)
 
-### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) => any
+#### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
+
+#### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
+
   
-### only(children : Children | []) => any
+#### only(children : Children | []) => any
 
-### onlyComposed(children : Children, context) => any
+### Post Composition
+
+#### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) => any
+
+#### onlyComposed(children : Children | [], context) => any
