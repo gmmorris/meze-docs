@@ -73,8 +73,8 @@ const Summarize = function ({ children }) {
 
 compose(
   <Summarize>
-    <Echo name="John" />
-    <Echo name="Snow" />
+    <Echo firstname="John" />
+    <Echo lastname="Snow" />
   </Summarize>  
 ).then(console.log)
 ```
