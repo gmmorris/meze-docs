@@ -221,8 +221,6 @@ const DumbComponent = function ({ isValid }) {
     return { areYouADumbComponent: true }
   }
 }
-const EmptyDumb = () => {}
-
 const TheOnlyChild = function (props) {
   return {
     only: onlyComposed(props.children)
