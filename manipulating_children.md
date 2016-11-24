@@ -23,6 +23,8 @@ const SummarizeV2 = function (props) {
 }
 ```
 
+## Contents of Children
+
 ## Children API reference
 
 Each of the following sit on the **Meze.Children** object.
