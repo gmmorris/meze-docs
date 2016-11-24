@@ -71,14 +71,14 @@ The cloneWithProps() function creates a new Children data structure with the res
 Each clone will have its own props extended with the *props* argument.
 If the *props* argument is a function, that function will be called and its return value will be used as the props argument.
 
-#### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
-
+#### reduce(children : Children | [], reducer : (accumulator, item, index) => any, initialValue) => any
+The reduce() method applies a function against an accumulator and each element in *children* to reduce it to a single value.
   
 #### only(children : Children | []) => any
 
 ### Post Composition
 
-#### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) => any
+#### reduceComposed(children : Children | [], reducer : (accumulator, item, index) => any, initialValue, context) => any
 #### mapComposed(children : Children | [], mapper : (item, index) => [], context) => any
 
 #### onlyComposed(children : Children | [], context) => any
