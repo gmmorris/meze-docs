@@ -131,9 +131,9 @@ The above composition will log the following object to console:
 The forEach() function executes a provided function once per element in the Children data structure.
 
 #### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
-The cloneWithProps() function creates a new Children data structure with the results of cloning each component instance it contains.
-Each clone will have its own props extended with the *props* argument.
-If the *props* argument is a function, that function will be called and its return value will be used as the props argument.
+The cloneWithProps() function creates a new Children data structure with the results of cloning each component instance it contains, skipping any non component child. Each clone will have its own props extended with the *props* argument.
+
+If the *props* argument is a function, that function will be called with the child component's props as an argument and its return value will be used as the props argument.
 
 ```js
 const Echo = function (props) {
