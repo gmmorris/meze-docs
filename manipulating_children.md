@@ -141,9 +141,9 @@ const Echo = function (props) {
 }
 
 const Summarize = function (props) {
-  return cloneWithProps(props.children, (childProps) => (
-    { 'NAME': childProps.name.toUpperCase() }
-  ))
+  return cloneWithProps(props.children, function (childProps) {
+    return { 'NAME': childProps.name.toUpperCase() }
+  })
 }
 
 compose(
