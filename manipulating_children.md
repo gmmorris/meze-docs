@@ -64,6 +64,7 @@ If no mapper function is provided then *map* uses the *identity* function, which
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
 
 #### forEach(children : Children | [], mapper(item, index) => any)
+The forEach() method executes a provided function once per element in the Children data structure.
 
 #### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
 
