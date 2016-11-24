@@ -67,7 +67,7 @@ const Echo = (props) => JSON.stringify(props)
 
 const Summarize = function ({ children }) {
   return {
-    contents: map(children)
+    contents: map(children, (child, index) => child.clone({ order: index }))
   }
 }
 
@@ -81,10 +81,12 @@ compose(
 
 The above composition will output the following:
 > { contents: 
+> 
 >   [
 >    '{"firstname":"John","order":0}',
 >    '{"lastname":"Snow","order":1}'
 >   ] 
+>   
 > }
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
