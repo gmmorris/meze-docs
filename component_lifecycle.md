@@ -4,19 +4,12 @@ Meze allows you to hook into various lifecycle events of components in a composi
 
 Below is the table of the various events you can hook into.
 
-| Name                      | Triggered when                                                 | Arguments to callback           |
-| -----------               | --------------                                                 | -----------------------         |
-| `onCreated`               | a DOM node has just been created                               | `domNode`                       |
-| `onAttached`              | a DOM node being attached to the document                      | `domNode`                       |
-| `onWillDetach`            | a DOM node is about to be removed from the document            | `domNode`                       |
-| `onWillUpdate`            | a DOM node is about to perform any potential updates           | `domNode`                       |
-| `onDidUpdate`             | a DOM node has performed any potential updates                 | `domNode`                       |
-| `onComponentWillMount`    | a stateless component is about to mount                        | `domNode, props`                |
-| `onComponentDidMount`     | a stateless component has mounted successfully                 | `domNode, props`                |
-| `onComponentWillUnmount`  | a stateless component is about to be unmounted                 | `domNode, props`                |
-| `onComponentShouldUpdate` | a stateless component has been triggered to updated            | `domNode, lastProps, nextProps` |
-| `onComponentWillUpdate`   | a stateless component is about to perform an update            | `domNode, lastProps, nextProps` |
-| `onComponentDidUpdate`    | a stateless component has performed an updated                 | `domNode, props`                |
+| Event name | When is the event called? | Arguments |
+| ---------- | -------------- | ----------------------- |
+| `componentWillMount` | a component is about to mount ||
+| `componentDidMount` | a component has mounted successfully, has been composed and has its resulting composition is at hand | `composition` |
+| `componentWillUnmount` | a component is about to be unmounted and its resulting composition returned to the parent component | `domNode` |
+| `componentFailedMount` | a stateless component has been triggered to updated            | `lastProps, nextProps` |
 
 ### Using hooks
 
