@@ -38,6 +38,6 @@ Each of the following sit on the **Meze.Children** object.
 
 ### cloneWithProps(children : Children | [], props : Object | () => Object) : Children
 
-###reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) : any
+### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) : any
   
-###
+### 
