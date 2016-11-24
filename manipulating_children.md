@@ -80,13 +80,11 @@ compose(
 ```
 
 The above composition will output the following:
-> { contents: 
-> 
->   [
+> { 
+>  contents: [
 >    '{"firstname":"John","order":0}',
 >    '{"lastname":"Snow","order":1}'
->   ] 
->   
+>   ]
 > }
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
