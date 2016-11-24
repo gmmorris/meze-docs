@@ -69,6 +69,7 @@ The forEach() method executes a provided function once per element in the Childr
 #### cloneWithProps(children : Children | [], props : Object | () => Object) => Children
 The cloneWithProps() function creates a new Children data structure with the results of cloning each component instance it contains.
 Each clone will have its own props extended with the *props* argument.
+If the *props* argument is a function, that function will be called and its return value will be used as the props argument.
 
 #### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) => any
 
