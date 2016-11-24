@@ -79,6 +79,9 @@ compose(
 ).then(console.log)
 ```
 
+The above composition will output the following:
+> { contents: [ '{"firstname":"John"}', '{"lastname":"Snow"}' ] }
+
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
 
