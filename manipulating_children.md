@@ -30,8 +30,9 @@ Each of the following sit on the **Meze.Children** object.
 
 ### map(children : Children | [], mapper : (item, index) => any) : Children
 
-###
-###
+### forEach(children : Children | [], mapper : (item, index) => any)
+
+### reduce(children : Children | [], reducer : (reduciton, item, index) => any, initialValue) : any
 ###
 ###
 ###
