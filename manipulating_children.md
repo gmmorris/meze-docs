@@ -71,5 +71,6 @@ The mapToArray() function creates a new array with the results of calling a prov
 ### Post Composition
 
 #### reduceComposed(children : Children | [], reducer : (reduciton, item, index) => any, initialValue, context) => any
+#### mapComposed(children : Children | [], mapper : (item, index) => [], context) => any
 
 #### onlyComposed(children : Children | [], context) => any
