@@ -80,12 +80,14 @@ compose(
 ```
 
 The above composition will output the following:
-> { 
->  contents: [
->    '{"firstname":"John","order":0}',
->    '{"lastname":"Snow","order":1}'
->   ]
-> }
+```json
+{ 
+  contents: [
+    '{"firstname":"John","order":0}',
+    '{"lastname":"Snow","order":1}'
+   ]
+}
+```
 
 #### mapToArray(children : Children | [], mapper : (item, index) => any) => []
 The mapToArray() function operates precisely like map() except that the return value will be an Array.
