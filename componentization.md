@@ -175,7 +175,7 @@ By defining a strict API for the communication between all pieces of your code, 
 1. Every piece of your code knows how to talk to every other piece
 2. Every piece of your code can be passed as an argument to any other piece
 
-I tried asking a couple of members of the React core team how they would call this pattern, but never got an answer. Considering how swamped they must be with issues, emails and life, I decided not to pursue them further and decided to simply name this design pattern thus: **Componentisation**.
+I tried asking a couple of members of the React core team what they would call this design pattern, but sadly never got an answer. Considering how swamped they must be with issues, emails and life, I decided not to pursue them further and decided to simply name this design pattern thus: **Componentisation**.
 
 ### The rules of Componentisation
 
