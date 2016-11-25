@@ -80,7 +80,7 @@ While it seemed many developers appreciated the wisdom in this advice, very few 
 
 Composability is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate these theory into practicality, once they had real problems they needed to solve.
 
-When 
+### What is composition?
 
 
 
