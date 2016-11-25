@@ -109,3 +109,5 @@ What I have found *React* to be is an opportunity to alleviate many of the cause
 
 ## Composability via Componentisation
 I often hear developers talk about the difference between the *react* package and the *react-dom* package, and how the separation provides the ability to use *React*'s *component tree diffing* algorithm to build any kind of UI. But when it comes to discussing *React*'s composability, we actually need to start looking at the internals of the core *react* package.
+
+
