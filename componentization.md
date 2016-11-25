@@ -19,7 +19,7 @@ Until I began using *React* a couple of years ago, I spent several years evangel
 Backbone allowed us to focus less one how the pieces of our code fit together, and more on what they actually did. This was made possible by abstracting away a lot of the boilerplate and defining a clear API for each piece of our system.
 This might seem obvious in hindsight, but at the time this felt groundbreaking, mostly because we were so used to our Javascript existing as *a pile of code held together by duct tape* that we accepted our fate and found it hard to see the potential for a better option.
 
-But the key *unique selling point* of Backbone, beyond removing boilerplate and an enforced API, was the fact that it lay the ground work for proper **modularisation** of our Javascript codebases.
+But the key *unique selling point* of Backbone, beyond removing boilerplate and an enforced API, was the fact that it lay the groundwork for proper **modularisation** of our Javascript codebases.
 
 Modules are a corner stone of good code structuring, as they encourage us to break our code down into individual logical pieces. This makes it easier for us to write maintainable code that's easier to reason about, to test and to reuse.
 
