@@ -190,7 +190,7 @@ Considering the componentisation API as a generic design pattern I defined a set
 I believe that any library that follows these rules could, in theory, provide a the high level of composability required to build complex systems without compromising on low cohesiveness and efferent coupling.
 
 ### Learning more
-Following the React core team in Twitter and Github provided true insight into how this API can truly transform your codebase.
+Following the React core team in Twitter and Github provided true insight into how this API is transforming the way developers are writing code since the library was introduced.
 
 For example, the following thread by Sebastian Markbåge caused my brain to turn inside out at one point.
 
