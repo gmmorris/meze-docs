@@ -38,9 +38,9 @@ What we would initially envision as a well thought out and layered Trifle, turne
 In other words, our code would develop a smell... the unmistakable smell of a Custard, Jam, Mashed Potatoes and Meat dessert.
 
 ## Wait, but why?
-Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he *would* agree that if we find ourselves repeating a mistake, we should probably rethink our approach.
+Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he *would* agree that when we find ourselves repeating a mistake, we should probably rethink our initial approach.
 
-I tried to identify the root causes for why, I believed, so many of the teams I'd worked on ended up with these code smells.
+I tried to identify the root causes for why so many of the teams I'd worked on ended up with these code smells and I narrowed them down to the following four:
 
 **Building complex and / or distributed state machines**
 We often try to manage state in many different places and try to reconcile this state throughout the lifecycle of the application. This is hard to do well, and leads to many implicit assumptions which easily break.
