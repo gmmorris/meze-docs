@@ -55,17 +55,17 @@ We often find it hard to make truly atomic pieces of code as they have an inhere
 By far the biggest culprit for the dank code smell is a habit developers have of trying to predict how their code will be used instead of focusing on what is needed. This can lead to many problematic implementations, but most of all it leads to over engineering of solutions, which often leads to code that is very hard to *delete* later.
 I'm a firm believer that the best code is code that can easily be deleted and over engineering often makes that much harder to do.
 
----
-
-All in all, I believe these four point can be boiled down to one core issue, which is **High Efferent Coupling  & Fragmented State**.
-
 ### Searching for answers
-So now that I had boiled down my problems to its root causes, the next step would be to try and figure out what I can do to reduce their impact on how I wrote my code.
+Having boiled down my problem to its root causes, the next step would be to figure out what I could do to reduce their impact on how I write my code.
+When looking at the aforementioned points, I believe they can be reduces to one core issue, which is that my code would often end up with **High Efferent Coupling & Fragmented State**.
 
-Which begs the question:
+Which begged the question:
 ***How on earth do we reduce our efferent coupling & fragmented State?***
 
-This 
+Searching high and low for an answer I hit the internet, the books, the tech talks, my dad (I didn't literally hit my dad, I just asked his opinion, as he's been writing code since the 70s, presumably with hippie hair and a spliff) and found that there are in fact many possible answers to this question.
+
+I won't enumerate all of them, but one answer would show up repeatedly, and that was a quote which I'd heard so many times before I found it *eye-roll inducing*.
+
 
 
 
