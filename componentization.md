@@ -54,3 +54,16 @@ We often find it hard to make truly atomic pieces of code as they have an inhere
 #### Trying to predict the future
 By far the biggest culprit for the dank code smell is a habit developers have of trying to predict how their code will be used instead of focusing on what is needed. This can lead to many problematic implementations, but most of all it leads to over engineering of solutions, which often leads to code that is very hard to *delete* later.
 I'm a firm believer that the best code is code that can easily be deleted and over engineering often makes that much harder to do.
+
+---
+
+All in all, I believe these four point can be boiled down to one core issue, whici is **High Efferent Coupling  & Fragmented State**.
+
+Which begs the question:
+### So how do we reduce our efferent coupling & fragmented State?
+
+
+
+
+
+
