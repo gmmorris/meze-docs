@@ -57,7 +57,7 @@ I'm a firm believer that good code should be easy to delete and over engineering
 
 ### Searching for answers
 Having boiled down my problem to its root causes, the next step would be to figure out what I could do to reduce their impact on how I write my code.
-When looking at the aforementioned points, I believe they can be reduces to one core issue, which is that my code would often end up with **High Efferent Coupling & Fragmented State**.
+When looking at the aforementioned points, I believe they can be reduced to one core issue, which is that my code would often end up with **High Efferent Coupling & Fragmented State**.
 
 Which begged the question:
 ***How on earth do we reduce our efferent coupling & fragmented State?***
