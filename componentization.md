@@ -135,8 +135,27 @@ const childProps = [a, b, c]
 const composition = (props) => parent({ props, child: child(childProps) })
 ```
 
-While this might not be immediately apparent, the above composition is actually very reminiscent of *React*'s top level API.
+While this might not be immediately apparent, the above composition is actually very reminiscent of *React*'s top level API. In order to see it though, we'll have fade away some of the layer of abstraction provided by JSX.
 
+If you look at the React docs you'll find an [article explaining JSX's compilation target](https://facebook.github.io/react/docs/jsx-in-depth.html).
+Specifically what might interest you is how the following JSX:
+```javascript
+<MyButton color="blue" shadowSize={2}>
+  <Echo value="Click Me" />
+</MyButton>
+```
+
+compiles to:
+```javascript
+React.createElement(
+  MyButton,
+  {color: 'blue', shadowSize: 2},
+  React.createElement(
+    Echo,
+    {value: 'Click Me'}
+  )
+)
+```
 
 
 
