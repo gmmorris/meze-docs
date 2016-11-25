@@ -9,7 +9,7 @@ Below is the table of the various events you can hook into.
 | `componentWillMount` | a component is about to mount ||
 | `componentDidMount` | a component has mounted successfully, has been composed and has its resulting composition is at hand | `composition` |
 | `componentWillUnmount` | a component is about to be unmounted and its resulting composition has been flattened and is about to be returned to the parent component | `compositionResult` |
-| `componentFailedMount` | a component has failed to mount and has resulted in a thrown exception or a rejected promise | `exceptionOrRejection` |
+| `componentFailedMount` | a component has failed to mount and has resulted in a thrown exception or a rejected promise | `exceptionOrPromiseRejection` |
 
 ### Hooking into lifecycle events
 
