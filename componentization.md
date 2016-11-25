@@ -38,7 +38,7 @@ What we would initially envision as a well thought out and layered Trifle, turne
 In other words, our code would develop a smell... the unmistakable smell of a Custard, Jam, Mashed Potatoes and Meat dessert.
 
 ## Wait, but why?
-Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he would agree that if we find ourselves repeating a mistake, we should probably rethink our approach.
+Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he *would* agree that if we find ourselves repeating a mistake, we should probably rethink our approach.
 
 I tried to identify the root causes for why, I believed, so many of the teams I'd worked on ended up with these code smells.
 
