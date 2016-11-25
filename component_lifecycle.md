@@ -46,4 +46,10 @@ Meze.compose(
 ).then(console.log)
 ```
 
-The above composition 
+The above composition will log the following object to console:
+```json
+{ 
+  compositionsByCompositionOrder: [ 3, 2, 4, 1 ],
+  compositionsByCompletionOrder: [ 1, 2, 3, 4 ] 
+}
+```
