@@ -91,6 +91,8 @@ But just to make sure we're on the same page I'll clarify that what I mean by fu
 ```javascript
 const g = () => {}
 const f = () => {}
+
+// (g ∘ f )(x) = g(f(x))
 const h = (...args) => g(f(...args))
 ```
 
@@ -115,3 +117,19 @@ React is often toted around as highly declarative, composable and encapsulated. 
 I guess the rest of the Javascript community is much more practical than I am, because I found myself much more concerned with *why* it worked than anyone else I talked to about this.
 
 ### From Function to Component
+Analysing React, what I realised was that a direct parallel can be made between the API of Functional Composition and the React API. 
+
+Lets break down the API of Functional Composition:
+```javascript
+// We'll label g() and f() as the `parent` and `child` functions
+const parent = () => {}
+const child = () => {}
+
+// we'll label the arguments for the composition as `props`
+const props = [x, y, z]
+// (parent ∘ child )(x) = parent(child(props))
+const composition = (props) => parent(child(props))
+```
+
+
+
