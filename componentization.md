@@ -11,7 +11,7 @@ It probably **isn't** *figuring out the next super cool & complex algorithm.*
 
 But rather, what our job probably **is**, is to *take an existing abstraction and compose it with a second abstraction in order to form a third abstraction*.
 
-What we're trying to figure out is how best to do that.
+What we're still trying to figure out is how best to do that.
 
 ## Modularisation
 
