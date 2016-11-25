@@ -9,7 +9,7 @@ But, before we talk about technical stuff, I'd like to ask you an existential qu
 
 It probably isn't is *figuring out the next super cool & complex algorithm.*
 
-But rather, what it probably *is*, is to *take an existing abstraction and compose it with a second abstraction in order to form a third abstraction*.
+But rather, what our job probably *is*, is to *take an existing abstraction and compose it with a second abstraction in order to form a third abstraction*.
 
 
 
