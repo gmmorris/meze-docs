@@ -30,4 +30,4 @@ and reduce complexity, we would inevitably hit the same wall.
 
 As a codebase would grow, requirements changed and assumptions were discovered to be incorrect, we often find that our abstractions begin to fail us.
 
-What we initially envisioned as a multi layered Trifle, turned out to be more a sort of game of Snake and Ladders, where
+What we would initially envision as a layered Trifle, turned out to be more a sort of game of Snake and Ladders, where each layer ends up seeping into the layers above and bellow it. 
