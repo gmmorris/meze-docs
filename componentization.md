@@ -20,5 +20,6 @@ This might seem obvious in hindsight, but at the time this felt groundbreaking, 
 
 But the key *unique selling point* of Backbone, beyond removing boilerplate and an enforced API, was the fact that it lay the ground work for proper **modularisation** of our Javascript codebases.
 
-Modules are a corner stone of good code structuring, as they encourage us to break our code down into logical pieces. This makes it easier for us to write maintainable code that's easier to reason about, to test and to reuse.
+Modules are a corner stone of good code structuring, as they encourage us to break our code down into individual logical pieces. This makes it easier for us to write maintainable code that's easier to reason about, to test and to reuse.
 
+**spaghetti**
