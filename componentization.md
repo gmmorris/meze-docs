@@ -132,7 +132,7 @@ const props = [x, y, z]
 // what to do
 const childProps = [a, b, c]
 
-const composition = (props) => parent({ props, child: child(childProps) })
+const composition = (props) => parent(props, child(childProps))
 ```
 
 While this might not be immediately apparent, the above composition is actually very reminiscent of *React*'s top level API. In order to see it though, we'll have fade away some of the layer of abstraction provided by JSX.
