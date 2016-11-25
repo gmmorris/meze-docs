@@ -76,7 +76,7 @@ The reason I found this quote so annoying was that the more I spoke about this t
 
 ![](Screen Shot 2016-11-25 at 15.50.26.png)
 
-While it seemed many developers appreciated the wisdom in this advice, very few could actually show me *how to achieve this*.
+While it seemed many developers appreciated the wisdom in this advice, reflected in the fact that it has been featured in innumerable talks and blog posts, very few could actually show me *how to achieve this*.
 
 *Composability* is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate these theory into practicality, once they had real problems they needed to solve.
 
@@ -84,10 +84,15 @@ While it seemed many developers appreciated the wisdom in this advice, very few 
 So to figure out how to achieve *composability*, we first need to understand what *composition* actually means.
 
 As far as I can see, there are two kinds of composition.
-The first is functional composition, which I feel is relatively straight forward.
+
+The first is **functional composition**, which I feel is relatively straight forward.
+
+The second is **object composition**, and this is where I got stuck.
 
 #### What is Functional Composition?
-Function Composition is pretty
+If you're one of the lucky ones, you will hopefully have forgotten that you learned Function Composition in high school.
+
+
 
 #### What is Object Composition?
 [Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
