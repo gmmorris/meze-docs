@@ -23,3 +23,9 @@ But the key *unique selling point* of Backbone, beyond removing boilerplate and 
 Modules are a corner stone of good code structuring, as they encourage us to break our code down into individual logical pieces. This makes it easier for us to write maintainable code that's easier to reason about, to test and to reuse.
 
 ## Multi-tier turned Snake and Ladders
+Backbone, though, as it turned out, was not the be-all and end-all solution to our problems.
+
+While we leveraged the benefits of MVC and other patterns to lay out our architecture as Multi-Tiered Object Oriented designs, striving for separation of concerns by layering our modules, designing inheritance chains meant to improve code reuse
+and reduce complexity, we would inevitably hit the same wall.
+
+
