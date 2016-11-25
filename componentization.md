@@ -128,11 +128,13 @@ const child = () => {}
 // we'll label the arguments for the composition as `props`
 const props = [x, y, z]
 // we'll add a little flexability by allowing the parent and child
-// to have their own arguments
-const childProps = [x, y, z]
-// (parent ∘ child )(x) = parent({ props, children: [child(childProps)] })
-const composition = (props) => parent(child(props))
+// to have their own arguments, and leaving it up to the parent to decide
+// what to do
+const childProps = [a, b, c]
+
+const composition = (props) => parent({ props, child: child(childProps) })
 ```
+
 
 
 
