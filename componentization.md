@@ -144,7 +144,6 @@ Specifically what might interest you is how the following JSX:
   <Echo value="Click Me" />
 </MyButton>
 ```
-
 compiles to:
 ```javascript
 React.createElement(
@@ -157,5 +156,30 @@ React.createElement(
 )
 ```
 
+While it might not be apparent at first glance, this API could easily be a wrapper for the functional composition we built a couple of snippets ago.
 
+Lets replace the React Component references and props with the labels we defined in our snippet.
+```javascript
+React.createElement(
+  parent,
+  props,
+  React.createElement(
+    child,
+    childProps
+  )
+)
+```
+
+This might seem obvious in hindsight, but by adding a little abstraction and expanding flexibility by allowing the parent functions to have their own arguments in addition to the return values of the child functions, React has actually provided us with a highly flexible API for Object Composition.
+By defining a strict API for the communication between all pieces of your code, you achieve an ideal situation where:
+1. Every piece of your code knows how to talk to every other piece
+2. Every piece of your code can be passed as an argument to any other piece
+
+Following the React core team in Twitter and Github provided true insight into how this API can truly transform your codebase.
+
+For example, the following thread by Sebastian Markbåge caused my brain to turn inside out at one point.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I refer to the number of components in your application layer, component layer, layout layer, rendering layer as: Horizontal surface area.</p>&mdash; Sebastian Markbåge (@sebmarkbage) <a href="https://twitter.com/sebmarkbage/status/704737113007259648">March 1, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The number of layers for a feature is: Vertical surface area. React can expand to include more verticals without growing horizontally.</p>&mdash; Sebastian Markbåge (@sebmarkbage) <a href="https://twitter.com/sebmarkbage/status/704737495448055808">March 1, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is what will keep React from becoming a huge monolith yet get synergy effects from vertical integration. <a href="https://t.co/oukDDLw7a6">https://t.co/oukDDLw7a6</a></p>&mdash; Sebastian Markbåge (@sebmarkbage) <a href="https://twitter.com/sebmarkbage/status/704738517641920512">March 1, 2016</a></blockquote>
 
