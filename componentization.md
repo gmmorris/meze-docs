@@ -68,7 +68,7 @@ I won't enumerate all of them, but one answer would show up repeatedly, and that
 
 ![](Screen Shot 2016-11-25 at 15.41.31.png)
 
-> **Side note:** *Note the year in which this book, considered a religious tome by many developers, was released. 1994. That's 22 years ago. That's it. If anything should remind you that we're still "just figuring out this shit, because it's bloody new", it's that fact.*
+> **Side note:** *Note the year in which this book, considered a religious tome by many developers, was released. 1994. That's 22 years ago, that's it. If anything serves to remind us that we're still "just figuring out this shit, because it's bloody new", it's that.*
 
 In fact, this quote has been repeated so many times by so many people, I've began to find it *eye-roll inducing*.
 
