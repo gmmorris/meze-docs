@@ -1,7 +1,7 @@
 # Componentisation
 
 Several months ago I gave a talk at one of our fortnightly **Unruly Tech Talks** about a topic that I had been mulling around in my head for several months prior.
-The topic was an abstract thought process about an architecture abstraction, triggered by my adoption of the *React* library as a go-to for declarative construction of my user interfaces.
+The topic was an abstract thought process about an architecture abstraction, triggered by my adoption of the *React* library in order to declaratively construct user interfaces.
 
 But, before we talk about technical stuff, I'd like to ask you an existential question as a developer.
 
