@@ -5,9 +5,9 @@ Triggered by my adoption of the library, I found the topic of React as an abstra
 
 But we'll get to *React* in a moment. First I'd like to ask you an existential question.
 
-**What's the core of our job as developers today?**
+**What is the core of our job as developers today?**
 
-It probably **isn't** is *figuring out the next super cool & complex algorithm.*
+It probably **isn't** *figuring out the next super cool & complex algorithm.*
 
 But rather, what our job probably **is**, is to *take an existing abstraction and compose it with a second abstraction in order to form a third abstraction*.
 
