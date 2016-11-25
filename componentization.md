@@ -5,7 +5,7 @@ The topic was that of an architecture abstraction, triggered by my adoption of t
 
 But we'll get to *React* in a moment. First I'd like to ask you an existential question.
 
-**As developers, what's the core of our job as developers today?**
+**What's the core of our job as developers today?**
 
 It probably **isn't** is *figuring out the next super cool & complex algorithm.*
 
