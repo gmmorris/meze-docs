@@ -35,4 +35,5 @@ What we would initially envision as a well thought out and layered Trifle, turne
 ![](https://media.giphy.com/media/4OW5VatORVtkI/giphy.gif)
 *Rachel's Trifle? Good. **Code Trifle**? Bad.*
 
-# Identify
+# Identifying the source of the problem
+
