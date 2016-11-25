@@ -85,24 +85,16 @@ So to figure out how to achieve *composability*, we first need to understand wha
 
 As far as I can see, there are two kinds of composition.
 
-The first is **functional composition**, which I feel is relatively straight forward.
+The first is **functional composition**. I'll assume for the sake of succinctness,that you already know what functional composition is, as this blog post is already way too long.
 
-The second is **object composition**, and this is where I got stuck.
-
-#### What is Functional Composition?
-If you're one of the lucky ones, you will hopefully have forgotten that you learned Function Composition in high school.
-
-Functional Composition is an operation we learned in maths class where the result of one function is applied to the result of another function.
-
-In Javascript terms, this looks something like this:
+But just to make sure we're on the same page I'll clarify that what I mean by functional composition is that the **h** function is the *functional composition* of the **g** and **f** functions.
 ```javascript
 const g = () => {}
 const f = () => {}
 const h = (...args) => g(f(...args))
 ```
 
-In the above example, the **h** function is the result of *functional composition* of the **g** and **f** functions.
-This would allow us to achieve the 
+But the second kind of composition is **object composition**, and this is where I got stuck.
 
 #### What is Object Composition?
 [Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
