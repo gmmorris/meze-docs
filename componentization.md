@@ -68,13 +68,19 @@ I won't enumerate all of them, but one answer would show up repeatedly, and that
 
 ![](Screen Shot 2016-11-25 at 15.41.31.png)
 
-> **Side note:** Note the year in which this book, considered a religious tome by many developers, was released. 1994. 22 years ago. That's it. If anything should remind you that we're still "just figuring out this shit, because it's bloody new", it's that fact.*
-
-
+> **Side note:** *Note the year in which this book, considered a religious tome by many developers, was released. 1994. 22 years ago. That's it. If anything should remind you that we're still "just figuring out this shit, because it's bloody new", it's that fact.*
 
 In fact, this quote has been repeated so many times by so many people, I've began to find it *eye-roll inducing*.
-The reason 
 
+The reason I found this quote so annoying was that the more I spoke about this topic with experienced developers whom I looked up to, the more I found this quote to a reminder of another quote.
+
+![](Screen Shot 2016-11-25 at 15.50.26.png)
+
+While it seemed many developers appreciated the wisdom in this advice, very few could actually show me *how to achieve this*.
+
+Composability is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate these theory into practicality, once they had real problems they needed to solve.
+
+When 
 
 
 
