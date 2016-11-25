@@ -35,15 +35,18 @@ What we would initially envision as a well thought out and layered Trifle, turne
 ![](https://media.giphy.com/media/4OW5VatORVtkI/giphy.gif)
 *Rachel's Trifle? Good. **Code Trifle**? Bad.*
 
-## Identifying the source of the problem
+In other words, our code would develop a smell... the unmistakable smell of a Custard, Jam, Mashed Potatoes and Meat dessert.
+
+## Wait, but why?
 Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he would agree that if we find ourselves repeating a mistake, we should probably rethink our approach.
 
-Analysing the various
-Building complex and / or distributed state machines
+I tried to identify the root causes for why, I believed, so many of the teams I'd worked on ended up with these code smells.
 
+#### Building complex and / or distributed state machines
+We often try to manage state in many different places and try to reconcile this state throughout the lifecycle of the application. This is hard to do well, and leads to many implicit assumptions which easily break.
 
-Big bags of instruction rather than atomic declarative pipes
-
+#### Big bags of instruction rather than atomic declarative pipes
+Instruction are easy to follow, but not always easy to understand. They usually describe *how* something is done, rather than *why*, and the developers are left to figure out the *why* themselves. We've all found ourselves doing this, usually referring to it as *reverse engineering* and we often get it wrong.
 
 Terrible dependency chains reducing my ability to make atomic components
 
