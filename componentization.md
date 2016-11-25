@@ -36,4 +36,15 @@ What we would initially envision as a well thought out and layered Trifle, turne
 *Rachel's Trifle? Good. **Code Trifle**? Bad.*
 
 ## Identifying the source of the problem
+Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he would agree that if we find ourselves repeating a mistake, we should probably rethink our approach.
 
+Building complex and / or distributed state machines
+
+
+Big bags of instruction rather than atomic declarative pipes
+
+
+Terrible dependency chains reducing my ability to make atomic components
+
+
+Trying to predict the future
