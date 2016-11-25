@@ -96,8 +96,13 @@ Functional Composition is an operation we learned in maths class where the resul
 
 In Javascript terms, this looks something like this:
 ```javascript
-
+const g = () => {}
+const f = () => {}
+const h = (...args) => g(f(...args))
 ```
+
+In the above example, the **h** function is the result of *functional composition* of the **g** and **f** functions.
+This would allow us to achieve the 
 
 #### What is Object Composition?
 [Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
