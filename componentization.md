@@ -26,8 +26,7 @@ Modules are a corner stone of good code structuring, as they encourage us to bre
 ## Rachel's Trifle
 Backbone, though, as it turned out, was not the be-all and end-all solution to our problems.
 
-We would leverage the benefits of MVC to break down our architecture into multitiered Object Oriented designs. This allowed us to strive for separation of concerns by layering our modules and to design inheritance chains meant to improve code reuse
-and reduce complexity, but it seemed we would always inevitably hit the same wall.
+We could leverage the benefits of MVC to achieve several things, such as breaking down our architecture into multitiered Object Oriented designs, to strive for separation of concerns by layering our modules and to design inheritance chains meant to improve code reuse and reduce complexity. But it seemed we would always end up hitting the same inevitable wall.
 
 As a codebase would grow, requirements changed and assumptions were discovered to be incorrect, we often find that our abstractions begin to fail us.
 
