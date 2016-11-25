@@ -11,24 +11,39 @@ Below is the table of the various events you can hook into.
 | `componentWillUnmount` | a component is about to be unmounted and its resulting composition returned to the parent component | `composition` |
 | `componentFailedMount` | a component has failed to mount and has resulted in an exception | `exception` |
 
-### Using hooks
+### Hooking into lifecycle events
 
 It's simple to implicitly assign hooks to both DOM nodes and stateless components.
-Please note: stateful components (ES2015 classes) from `inferno-component` **do not** support hooks.
 
 ```javascript
-function createdCallback(domNode, props) {
-    // [domNode] will be available for DOM nodes and components (if the component has mounted to the DOM)
-	// [props] will only be passed for stateless components
+const { cloneWithProps, reduceComposed } = Meze.Children
+
+const PosponedCompletion = ({ delay, val }) =>
+  new Promise(resolve => setTimeout(() => {
+      resolve(val)
+    }, delay)
+  )
+
+const OrderedByCompletion = function ({ children }, { compose }) {
+  const compositionsByCompletionOrder = []
+  function addToOrderedCompositions(composition) {
+    compositionsByCompletionOrder.push(composition)
+  }
+  return compose(cloneWithProps(children, { componentWillUnmount: addToOrderedCompositions }))
+    .then(compositionsByCompositionOrder => ({
+      compositionsByCompositionOrder,
+      compositionsByCompletionOrder
+    }))
 }
 
-InfernoDOM.render(<div onCreated={ createdCallback } />, document.body);
-
-function StatelessComponent({ props }) {
-	return <div>Hello world</div>;
-}
-
-InfernoDOM.render(<StatelessComponent onComponentWillMount={ createdCallback } />, document.body);
+Meze.compose(
+    <OrderedByCompletion>
+      <PosponedCompletion delay={1000} val ={3} />
+      <PosponedCompletion delay={500} val ={2} />
+      <PosponedCompletion delay={3420} val ={4} />
+      <PosponedCompletion delay={20} val ={1} />
+    </OrderedByCompletion>
+).then(console.log)
 ```
 
-Hooks provide powerful lifecycle events to stateless components, allowing you to build components without being forced to use ES2015 classes.
+The above composition 
