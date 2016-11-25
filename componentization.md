@@ -108,6 +108,8 @@ This feeling of frustration with the smell of my code would stay with me for a w
 What I have found *React* to be is an opportunity to alleviate many of the causes for these code smells, and that's the actual topic I want to talk about.
 
 ## Composability via Componentisation
-I often hear developers talk about the difference between the *react* package and the *react-dom* package, and how the separation provides the ability to use *React*'s *component tree diffing* algorithm to build any kind of UI. But when it comes to discussing *React*'s composability, we actually need to start looking at the internals of the core *react* package.
+I often hear developers talk about the difference between the *react* package and the *react-dom* package. They seem to always focus on how the separation provides the ability to use *React*'s top level API to define components for different Renderers and Reconciler in order to share components and logic between different target technologies. It's much more unusual though that they actually discuss what it is about the top level API that makes it so well suited for building such a wide variety of components.
+
+
 
 
