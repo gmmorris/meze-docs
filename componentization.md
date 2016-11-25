@@ -67,7 +67,7 @@ Searching high and low for an answer I hit the internet, the books, the tech tal
 I won't enumerate all of them, but one answer would show up repeatedly, and that was a quote which I'd heard so many times before:
 
 ![](Screen Shot 2016-11-25 at 15.41.31.png)
-*Side note: Note the year in which this book, considered a religious tome by many developers, was released. 1994. 22 years ago. That's it. If anything should remind you that we're still "just figuring out this shit" because it's bloody new", it's that fact.*
+*Side note: Note the year in which this book, considered a religious tome by many developers, was released. 1994. 22 years ago. That's it. If anything should remind you that we're still "just figuring out this shit, because it's bloody new", it's that fact.*
 
 In fact, this quote has been repeated so many times by so many people, I've began to find it *eye-roll inducing*.
 The reason 
