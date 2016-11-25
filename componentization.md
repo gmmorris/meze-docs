@@ -38,6 +38,7 @@ What we would initially envision as a well thought out and layered Trifle, turne
 ## Identifying the source of the problem
 Einstein never actually said that *insanity is doing the same thing over and over again and expecting different results*, but I'd like to think that he would agree that if we find ourselves repeating a mistake, we should probably rethink our approach.
 
+Analysing the various
 Building complex and / or distributed state machines
 
 
