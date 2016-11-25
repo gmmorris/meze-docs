@@ -85,7 +85,7 @@ So to figure out how to achieve *composability*, we first need to understand wha
 
 As far as I can see, there are two kinds of composition.
 
-The first is **functional composition**. I'll assume for the sake of succinctness,that you already know what functional composition is, as this blog post is already way too long.
+The first is **functional composition**. I'll assume for the sake of succinctness, that you already know what functional composition is, as this blog post is already way too long.
 
 But just to make sure we're on the same page I'll clarify that what I mean by functional composition is that the **h** function is the *functional composition* of the **g** and **f** functions.
 ```javascript
