@@ -98,7 +98,7 @@ const h = (...args) => g(f(...args))
 
 The second kind of composition is **object composition**, and this is where I got stuck.
 
-I just couldn't wrap my brain around how I was supposed to take the theory of Functional Composition and apply it in practice to complex objects. How to structure my pieces of code and make them work together, without relegating back to old and smelly practices.
+I just couldn't wrap my brain around how I was supposed to take the theory of Functional Composition and apply it to complex objects. How to structure the pieces of my code and make them work together without relegating back to old and smelly practices.
 
 #### What is Object Composition?
 [Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains object composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
