@@ -187,7 +187,7 @@ Considering the componentisation API as a generic design pattern I defined a set
 6. A parent object can interact with a single child independantly and with all children as a group
 7. A component doesn’t have to “know” its children in order to interact with them
 
-
+I believe that any library that follows these rules could, in theory, provide a the high level of composability required to build complex systems without compromising on low cohesiveness and efferent coupling.
 
 ### Learning more
 Following the React core team in Twitter and Github provided true insight into how this API can truly transform your codebase.
