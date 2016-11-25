@@ -29,6 +29,7 @@ const OrderedByCompletion = function ({ children }, { compose }) {
   function addToOrderedCompositions(composition) {
     compositionsByCompletionOrder.push(composition)
   }
+  
   return compose(cloneWithProps(children, { componentWillUnmount: addToOrderedCompositions }))
     .then(compositionsByCompositionOrder => ({
       compositionsByCompositionOrder,
