@@ -7,6 +7,6 @@
 * [Manipulating Children](manipulating_children.md)
 * [Component Lifecycle](component_lifecycle.md)
 * [Advanced Composition](advanced_composition.md)
-* [TODO](todo.md)
 * [Testing](testing.md)
+* [TODO](todo.md)
 
