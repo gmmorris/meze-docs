@@ -78,9 +78,17 @@ The reason I found this quote so annoying was that the more I spoke about this t
 
 While it seemed many developers appreciated the wisdom in this advice, very few could actually show me *how to achieve this*.
 
-Composability is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate these theory into practicality, once they had real problems they needed to solve.
+*Composability* is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate these theory into practicality, once they had real problems they needed to solve.
 
-### What is composition?
+This feeling of frustration with smell of my code would stay with me for a while, until recently, when I began using React in production. 
 
+### What is Composition?
+Composition 
+
+#### What is Functional Composition?
+Function Composition is pretty
+
+#### What is Object Composition?
+[Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
 
 
