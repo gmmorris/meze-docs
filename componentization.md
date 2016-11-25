@@ -1,4 +1,4 @@
-# The magical world of Componentisation
+# The magical quest for Componentisation
 
 Several months ago I gave a talk at one of our fortnightly **Unruly Tech Talks** about a topic that I had been mulling around in my head for several months prior.
 Triggered by my adoption of the library, I found the topic of React as an abstraction of software architecture to be highly intriguing.
@@ -11,7 +11,7 @@ It probably **isn't** *figuring out the next super cool & complex algorithm.*
 
 But rather, what our job probably **is**, is to *take an existing abstraction and compose it with a second abstraction in order to form a third abstraction*.
 
-What we're still trying to figure out is how best to do that.
+What we're still trying to figure out is how best to do that, right? For me, that quest began with modularisation. 
 
 ## Modularisation
 
