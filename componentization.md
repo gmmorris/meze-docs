@@ -178,6 +178,16 @@ By defining a strict API for the communication between all pieces of your code, 
 I tried asking a couple of members of the React core team what they would call this design pattern, but sadly never got an answer. Considering how swamped they must be with issues, emails and life, I decided not to pursue them further and simply named this design pattern thus: **Componentisation**.
 
 ### The rules of Componentisation
+Considering the componentisation API as a generic design pattern I defined a set of 7 rules which any library must follow in order to provide the composability I strive for:
+1. Every composed object must be either a Component or at most a built in type
+2. There is one parent object
+3. There can be multiple child objects
+4. A parent object can receive its own arguments (rather than being limitted to receiving the return value of child objects)
+5. child objects can receive their own arguments
+6. A parent object can interact with a single child independantly and with all children as a group
+7. A component doesn’t have to “know” its children in order to interact with them
+
+
 
 ### Learning more
 Following the React core team in Twitter and Github provided true insight into how this API can truly transform your codebase.
