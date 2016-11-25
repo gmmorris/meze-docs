@@ -87,7 +87,7 @@ To the best of my understanding there are two kinds of composition.
 
 The first is **functional composition**. I'll assume for the sake of succinctness, that you already know what functional composition is, as this blog post is already way too long.
 
-But just to make sure we're on the same page I'll clarify that what I mean by functional composition is that the **h** function is the *functional composition* of the **g** and **f** functions.
+But just to make sure we're on the same page I'll clarify that when I say functional composition, what I mean is that, in the following snippet, the **h** function is the *functional composition* of the **g** and **f** functions.
 ```javascript
 const g = () => {}
 const f = () => {}
@@ -96,7 +96,7 @@ const f = () => {}
 const h = (...args) => g(f(...args))
 ```
 
-But the second kind of composition is **object composition**, and this is where I got stuck.
+The second kind of composition is **object composition**, and this is where I got stuck.
 
 I just couldn't figure out how to take Object Composition in theory and apply it in practice. How to structure my pieces of code and make them work together, without relegating back to old and smelly practices.
 
