@@ -13,7 +13,7 @@ Below is the table of the various events you can hook into.
 
 ### Hooking into lifecycle events
 
-It's simple to implicitly assign hooks to both DOM nodes and stateless components.
+Hooking into an event is as simple as adding a property on the component instance by the event name
 
 ```javascript
 const { cloneWithProps, reduceComposed } = Meze.Children
