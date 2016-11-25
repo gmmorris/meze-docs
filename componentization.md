@@ -66,6 +66,10 @@ Searching high and low for an answer I hit the internet, the books, the tech tal
 
 I won't enumerate all of them, but one answer would show up repeatedly, and that was a quote which I'd heard so many times before I found it *eye-roll inducing*.
 
+> **Favor 'object composition'**
+> **over 'class inheritance'**
+
+
 
 
 
