@@ -3,9 +3,9 @@
 Several months ago I gave a talk at one of our fortnightly **Unruly Tech Talks** about a topic that I had been mulling around in my head for several months prior.
 The topic was that of an architecture abstraction, triggered by my adoption of the *React* library in order to declaratively construct user interfaces.
 
-But we'll get to *React* in a moment. First I'd like to ask you an existential question as a developer.
+But we'll get to *React* in a moment. First I'd like to ask you an existential question.
 
-**What's the core of our job as developers today?**
+**As developers, what's the core of our job as developers today?**
 
 It probably **isn't** is *figuring out the next super cool & complex algorithm.*
 
