@@ -30,7 +30,10 @@ const OrderedByCompletion = function ({ children }, { compose }) {
     compositionsByCompletionOrder.push(composition)
   }
   
-  const childrenWithEventListners = cloneWithProps(children, { componentWillUnmount: addToOrderedCompositions })
+  const childrenWithEventListners = cloneWithProps(
+    children,
+    { componentWillUnmount: addToOrderedCompositions }
+  )
   
   return compose(childrenWithEventListners)
     .then(compositionsByCompositionOrder => ({
