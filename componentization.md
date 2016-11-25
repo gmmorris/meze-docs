@@ -72,7 +72,7 @@ I won't enumerate all of them, but one answer would show up repeatedly, and that
 
 In fact, this quote has been repeated so many times by so many people, I've began to find it *eye-roll inducing*.
 
-The reason I found this quote so annoying was that the more I spoke about this topic with experienced developers whom I looked up to, the more I found this quote to a reminder of another quote.
+The reason I found this quote slightly annoying was that the more I discussed this topic with experienced developers, the more it would reminde me of another quote.
 
 ![](Screen Shot 2016-11-25 at 15.50.26.png)
 
