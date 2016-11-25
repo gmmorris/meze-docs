@@ -9,5 +9,5 @@
 * [Advanced Composition](advanced_composition.md)
 * [Testing](testing.md)
 * [TODO](todo.md)
-* Banquet
+* [Banquet](banquet.md)
 
