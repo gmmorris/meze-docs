@@ -96,9 +96,16 @@ const h = (...args) => g(f(...args))
 
 But the second kind of composition is **object composition**, and this is where I got stuck.
 
+I just couldn't figure out how to take Object Composition in theory and apply it in practice. How to structure my pieces of code and make them work together, without relegating back to old and smelly practices.
+
 #### What is Object Composition?
-[Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
+[Eric Elliot](https://twitter.com/_ericelliott) gave a really good talk at [Fluent 2013](https://www.youtube.com/watch?v=lKCCZTUx0sI) in which he explains object composition and its benefits in a much better way than I ever could, so I'd highly recommend watching his talk.
 
+But after experimenting with Eric's proposed solution, a library called [StampIt](https://github.com/stampit-org/stampit), I still couldn't see how I could avoid the high Efferent Coupling I was experiencing, nor did it do much to help me tackle the fragmented state.
 
+This feeling of frustration with the smell of my code would stay with me for a while, until recently, when I began using *React* in production. It wasn't immediately apparent to me how React seemed to alleviate many of the problems I was experiencing, nor do I want to tote React as necceserily a *solution* to these problems.
 
-This feeling of frustration with smell of my code would stay with me for a while, until recently, when I began using React in production.
+What I have found *React* to be is an opportunity to alleviate many of the causes for these code smells, and that's the actual topic I want to talk about.
+
+## Composability via Componentisation
+
