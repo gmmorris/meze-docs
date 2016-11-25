@@ -112,6 +112,6 @@ I often hear developers talk about the difference between the *react* package an
 
 React is often toted around as highly declarative, composable and encapsulated. In fact, these descriptions are stated on the React homepage, but no where in the documentation is it discussed what it is about React's API that allows for these traits. These traits are just stated as fact.
 
-I guess the rest of the Javascript community is much more practical than I am, because I found myself more concerned with *why* it worked than anyone else I talked to.
+I guess the rest of the Javascript community is much more practical than I am, because I found myself much more concerned with *why* it worked than anyone else I talked to about this.
 
-
+### From Function to Component
