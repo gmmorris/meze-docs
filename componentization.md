@@ -175,6 +175,7 @@ By defining a strict API for the communication between all pieces of your code, 
 1. Every piece of your code knows how to talk to every other piece
 2. Every piece of your code can be passed as an argument to any other piece
 
+### Learning more
 Following the React core team in Twitter and Github provided true insight into how this API can truly transform your codebase.
 
 For example, the following thread by Sebastian Markbåge caused my brain to turn inside out at one point.
