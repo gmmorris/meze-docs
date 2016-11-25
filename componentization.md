@@ -110,6 +110,8 @@ What I have found *React* to be is an opportunity to alleviate many of the cause
 ## Composability via Componentisation
 I often hear developers talk about the difference between the *react* package and the *react-dom* package. They seem to always focus on how the separation provides the ability to use *React*'s top level API to define components for different Renderers and Reconciler in order to share components and logic between different target technologies. It's much more unusual though that they actually discuss what it is about the top level API that makes it so well suited for building such a wide variety of components.
 
+React is often toted around as highly declarative, composable and encapsulated. In fact, these descriptions are stated on the React homepage, but no where in the documentation is it discussed what it is about React's API that allows for these traits. These traits are just stated as fact.
 
+I guess the rest of the Javascript community is much more practical than I am, because I found myself more concerned with *why* it worked than anyone else I talked to.
 
 
