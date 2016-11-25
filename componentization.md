@@ -1,7 +1,7 @@
 # The magical world of Componentisation
 
 Several months ago I gave a talk at one of our fortnightly **Unruly Tech Talks** about a topic that I had been mulling around in my head for several months prior.
-The topic was that of an architecture abstraction, triggered by my adoption of the *React* library in order to declaratively construct user interfaces.
+Triggered by my adoption of the library, I found the topic of React as an abstraction of software architecture to be highly intriguing.
 
 But we'll get to *React* in a moment. First I'd like to ask you an existential question.
 
