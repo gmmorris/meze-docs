@@ -25,7 +25,7 @@ Modules are a corner stone of good code structuring, as they encourage us to bre
 ## Trifle turned Snake and Ladders
 Backbone, though, as it turned out, was not the be-all and end-all solution to our problems.
 
-While we leveraged the benefits of MVC and other patterns to lay out our architecture as Multi-Tiered Object Oriented designs, striving for separation of concerns by layering our modules, designing inheritance chains meant to improve code reuse
+While we leveraged the benefits of MVC and other patterns to lay out our architecture into multitiered Object Oriented designs, striving for separation of concerns by layering our modules, designing inheritance chains meant to improve code reuse
 and reduce complexity, we would inevitably hit the same wall.
 
 As a codebase would grow, requirements changed and assumptions were discovered to be incorrect, we often find that our abstractions begin to fail us.
