@@ -49,11 +49,11 @@ We often try to manage state in many different places and try to reconcile this 
 Instructions may be easy to follow, but not always easy to understand. They usually describe *what* is done, rather than *why* and *how*. This means that the developers are left to figure out the *why* themselves. We've all found ourselves doing this, often referring to it as *reverse engineering our own code* and we often end up misinterpreting the *why*.
 
 **Complex dependency chains reducing our ability to make atomic pieces of code**
-We often find it hard to make truly atomic pieces of code as they have an inherent *need* for a piece of data or operation that is the concern of another piece of the code. This dependency will always exist in a complex system, but in the absence of a clear API for bridging these dependencies without creating a cohesive coupling between the two pieces of code, this can lead to dependency chains which are hard to reconcile.
+We often find it hard to make truly atomic pieces of code as they have an inherent *need* for a piece of data or operation that is the concern of another piece of the code. This dependency will always exist in a complex system, but in the absence of a clear API for bridging these dependencies without creating a cohesive coupling between the two pieces, this can lead to dependency chains which are hard to reconcile.
 
 **Trying to predict the future**
 By far the biggest culprit for the dank code smell is a habit developers have of trying to predict how their code will be used instead of focusing on what is needed. This can lead to many problematic implementations, but most of all it leads to over engineering of solutions, which often leads to code that is very hard to *delete* later.
-I'm a firm believer that the best code is code that can easily be deleted and over engineering often makes that much harder to do.
+I'm a firm believer that good code should be easy to delete and over engineering often makes that much harder to do.
 
 ### Searching for answers
 Having boiled down my problem to its root causes, the next step would be to figure out what I could do to reduce their impact on how I write my code.
