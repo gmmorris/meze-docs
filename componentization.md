@@ -78,12 +78,12 @@ The reason I found this quote slightly annoying was that the more I discussed th
 
 While it seemed many developers appreciated the wisdom in this advice, reflected in the fact that it has been featured in innumerable talks and blog posts, very few could actually show me *how to achieve this*.
 
-*Composability* is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate these theory into practicality, once they had real problems they needed to solve.
+*Composability* is not an inherently clear idea, and while many developers seems perfectly capable of coding up an example in an IDE, they never seemed to actually follow through when it came to their codebase. And most annoying, they knew it, but couldn't quite translate this theory into practicality once they had real problems they needed to solve.
 
 ### What is Composition?
 So to figure out how to achieve *composability*, we first need to understand what *composition* actually means.
 
-As far as I can see, there are two kinds of composition.
+To the best of my understanding there are two kinds of composition.
 
 The first is **functional composition**. I'll assume for the sake of succinctness, that you already know what functional composition is, as this blog post is already way too long.
 
