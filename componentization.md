@@ -1,4 +1,4 @@
-# Componentisation
+# The magical world of Componentisation
 
 Several months ago I gave a talk at one of our fortnightly **Unruly Tech Talks** about a topic that I had been mulling around in my head for several months prior.
 The topic was that of an architecture abstraction, triggered by my adoption of the *React* library in order to declaratively construct user interfaces.
@@ -42,27 +42,30 @@ Einstein never actually said that *insanity is doing the same thing over and ove
 
 I tried to identify the root causes for why, I believed, so many of the teams I'd worked on ended up with these code smells.
 
-#### Building complex and / or distributed state machines
+**Building complex and / or distributed state machines**
 We often try to manage state in many different places and try to reconcile this state throughout the lifecycle of the application. This is hard to do well, and leads to many implicit assumptions which easily break.
 
-#### Big bags of instruction rather than atomic declarative pipes
+**Big bags of instruction rather than atomic declarative pipes**
 Instruction are easy to follow, but not always easy to understand. They usually describe *how* something is done, rather than *why*, and the developers are left to figure out the *why* themselves. We've all found ourselves doing this, referring to it as *reverse engineering own our code* and we often misinterpret the *why*.
 
-#### Terrible dependency chains reducing our ability to make atomic components
+**Terrible dependency chains reducing our ability to make atomic components**
 We often find it hard to make truly atomic pieces of code as they have an inherent *need* for a piece of data or operation that is the concern of another piece of the code. This dependency will always exist in a complex system, but in the absence of a clear API for bridging these dependencies without creating a cohesive coupling between the two pieces of code, this can lead to dependency chains which are hard to reconcile.
 
-#### Trying to predict the future
+**Trying to predict the future**
 By far the biggest culprit for the dank code smell is a habit developers have of trying to predict how their code will be used instead of focusing on what is needed. This can lead to many problematic implementations, but most of all it leads to over engineering of solutions, which often leads to code that is very hard to *delete* later.
 I'm a firm believer that the best code is code that can easily be deleted and over engineering often makes that much harder to do.
 
 ---
 
-All in all, I believe these four point can be boiled down to one core issue, whici is **High Efferent Coupling  & Fragmented State**.
+All in all, I believe these four point can be boiled down to one core issue, which is **High Efferent Coupling  & Fragmented State**.
+
+### Searching for answers
+So now that I had boiled down my problems to its root causes, the next step would be to try and figure out what I can do to reduce their impact on how I wrote my code.
 
 Which begs the question:
-### So how do we reduce our efferent coupling & fragmented State?
+***How on earth do we reduce our efferent coupling & fragmented State?***
 
-
+This 
 
 
 
