@@ -8,5 +8,5 @@
 * [Component Lifecycle](component_lifecycle.md)
 * [Advanced Composition](advanced_composition.md)
 * [TODO](todo.md)
-* Testing
+* [Testing](testing.md)
 
