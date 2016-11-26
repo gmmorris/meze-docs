@@ -119,7 +119,7 @@ I guess the rest of the Javascript community is much more practical than I am, b
 ### From Function to Component
 Analysing React, what I realised was that a direct parallel can be made between the API of Functional Composition and the React API. 
 
-Lets break down the API of Functional Composition:
+Lets break down the API of Functional Composition and label the different building blocks:
 ```javascript
 // We'll label g() and f() as the `parent` and `child` functions
 const parent = () => {}
