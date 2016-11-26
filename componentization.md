@@ -107,14 +107,14 @@ But after experimenting with Eric's proposed solution, a library called [StampIt
 
 This feeling of frustration with the smell of my code would stay with me for a while, until recently, when I began using *React* in production. It wasn't immediately apparent to me how React seemed to alleviate many of the problems I was experiencing, nor do I want to tote React as necceserily a *solution* to these problems.
 
-What I have found *React* to be is an opportunity to alleviate many of the causes for these code smells, and that's the actual topic I want to talk about.
+What I have found *React* to be though, is an opportunity to alleviate many of the causes for these code smells, and that's the actual topic I want to talk about.
 
 ## Composability via Componentisation
-I often hear developers talk about the difference between the *react* package and the *react-dom* package. They seem to always focus on how the separation provides the ability to use *React*'s top level API to define components for different Renderers and Reconciler in order to share components and logic between different target technologies. It's much more unusual though that they actually discuss what it is about the top level API that makes it so well suited for building such a wide variety of components.
+I often hear developers talk about the difference between the *react* package and the *react-dom* package. They seem to always focus on how the separation provides the ability to use *React*'s top level API to define *loosely coupled* components for different Renderers and Reconciler in order to share components and logic between different target technologies. They will also discuss how the uniderectional flow of data aids in avoiding *fragmented state*. Sadly, though, it's much more unusual though to hear them  discuss what it is about the top level API that makes it so well suited for building such a wide variety of components with relatively low efferent coupling.
 
-React is often toted around as highly declarative, composable and encapsulated. In fact, these descriptions are stated on the React homepage, but no where in the documentation is it discussed what it is about React's API that allows for these traits. These traits are just stated as fact.
+React is often toted around as highly declarative, composable and encapsulated. In fact, these descriptions are stated on the React homepage, but no where in the documentation is it discussed what it is about React's API that allows for these traits. These traits are simply stated as fact.
 
-I guess the rest of the Javascript community is much more practical than I am, because I found myself much more concerned with *why* it worked than anyone else I talked to about this.
+I guess the rest of the Javascript community is much more practical than I am, because I found myself much more concerned with *why* it worked than anyone else I talked to.
 
 ### From Function to Component
 Analysing React, what I realised was that a direct parallel can be made between the API of Functional Composition and the React API. 
