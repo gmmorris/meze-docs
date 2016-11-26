@@ -1,5 +1,5 @@
 # Banquet
-
+All [Restify](http://restify.com/)'s public API in Component form
 ## Server
 ## Use
 ## Plugins
@@ -25,4 +25,16 @@
 
 ## On
 ## Methods
+**Get**
+
+**Head**
+
+**Put**
+
+**Post**
+
+**Delete**
+
+**Handler**
+
 ## Response
