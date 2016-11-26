@@ -135,7 +135,7 @@ const childProps = [a, b, c]
 const composition = (props) => parent(props, child(childProps))
 ```
 
-While this might not be immediately apparent, the above composition is actually very reminiscent of *React*'s top level API. In order to see it though, we'll have fade away some of the layer of abstraction provided by JSX.
+While this might not be immediately apparent, the above composition is actually reminiscent of *React*'s top level API. In order to see it though, we'll have fade away some of the layers of abstraction provided by JSX.
 
 If you look at the React docs you'll find an [article explaining JSX's compilation target](https://facebook.github.io/react/docs/jsx-in-depth.html).
 Specifically what might interest you is how the following JSX:
@@ -187,10 +187,10 @@ Considering the componentisation API as a generic design pattern I defined a set
 6. A parent object can interact with a single child independantly and with all children as a group
 7. A component doesn’t have to “know” its children in order to interact with them
 
-I believe that any library that follows these rules could, in theory, provide a the high level of composability required to build complex systems without compromising on low cohesiveness and efferent coupling.
+I believe that any library that follows these rules could, in theory, provide the high level of composability required to build complex systems without compromising on low cohesiveness and efferent coupling.
 
 ### Learning more
-Following the React core team in Twitter and Github provided true insight into how this API is transforming the way developers are writing code since the library was introduced.
+Following the React core team on Twitter and Github provided true insight into how this API is transforming the way developers are writing code since the library was introduced.
 
 For example, the following thread by Sebastian Markbåge caused my brain to turn inside out at one point.
 
