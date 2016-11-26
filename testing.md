@@ -1,3 +1,3 @@
 # Testing
 
-#### Meze.TestUtils.shallowCompose(component, context)
+#### Meze.TestUtils.shallowCompose(component, context) => CompositionWrapper
