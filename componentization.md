@@ -129,7 +129,7 @@ const child = () => {}
 const props = [x, y, z]
 // we'll add a little flexability by allowing the parent and child
 // to have their own arguments, and leaving it up to the parent to decide
-// what to do
+// what to do with the child
 const childProps = [a, b, c]
 
 const composition = (props) => parent(props, child(childProps))
